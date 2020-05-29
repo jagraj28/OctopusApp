@@ -17,6 +17,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Colors.deepPurple[900],
       resizeToAvoidBottomInset: false,
 
@@ -45,8 +46,7 @@ class _HomeState extends State<Home> {
               'Welcome\n   Back!',
               style: TextStyle(
                 fontSize: 30.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.lightBlueAccent,
+                color: Colors.white,
                 fontFamily: 'Gotham',
             ),
           ),
@@ -58,9 +58,9 @@ class _HomeState extends State<Home> {
               child: Text(
                 'Login',
                 style: TextStyle(
-                  fontSize: 40.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.lightBlueAccent,
+                  decoration: TextDecoration.underline,
+                  fontSize: 35.0,
+                  color: Colors.white,
                   fontFamily: 'Gotham',
                 ),
               ),
@@ -68,25 +68,25 @@ class _HomeState extends State<Home> {
           ),
         
           // email address
-          Container(
-            child: Center(
-              child: Padding(
-                padding: const EdgeInsets.only(top: 120.0),
-                child: Text(
-                  'Email Address:',
-                  style: TextStyle(
-                    fontSize: 30.0,
-                    color: Colors.amberAccent,
-                    fontFamily: 'Gotham',
+            Container(
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 120.0),
+                  child: Text(
+                    'Email Address:',
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      color: Colors.amberAccent,
+                      fontFamily: 'Gotham',
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
-        
+          
           // space to enter email
           Container(
-            margin: EdgeInsets.only(top: 620.0, left: 50.0, right: 50.0, bottom: 370.0),
+            margin: EdgeInsets.only(top: 610.0, left: 50.0, right: 50.0, bottom: 370.0),
             decoration: BoxDecoration(
               border: Border(bottom: BorderSide(color: Colors.grey)),
             ),
@@ -154,7 +154,6 @@ class _HomeState extends State<Home> {
                   'Forgot Password?',
                   style: TextStyle(
                     fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
                     color: Colors.redAccent,
                     fontFamily: 'Gotham',
                     ),
@@ -176,7 +175,6 @@ class _HomeState extends State<Home> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 30.0,
-                      fontWeight: FontWeight.bold,
                       fontFamily: 'Gotham',
                     ),
                   ),
@@ -184,8 +182,6 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-
-
         ],
       ),
     );
