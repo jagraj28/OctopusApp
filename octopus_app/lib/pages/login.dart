@@ -21,26 +21,25 @@ class _LoginState extends State<Login> {
 
           // top end of page
           children: <Widget>[
-            Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(left: 20.0, top: 80.0),
-                  child: Text(
-                    'Welcome Back!',
-                    style: TextStyle(
-                      fontSize: 30.0,
-                      color: Colors.white,
-                      fontFamily: 'Gotham',
-                    ),
+            Container(
+              child: Padding(
+                padding: EdgeInsets.only(top: 80.0),
+                child: Text(
+                  'Welcome Back!',
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    color: Colors.white,
+                    fontFamily: 'Gotham',
                   ),
                 ),
+              ),
+            ),
                 // octopus image
-                Padding(
-                  padding: EdgeInsets.only(top: 40.0),
-                  child: Image.asset('assets/octopus.png'),
-                ),
-              ],
+            Container(
+              child: Padding(
+                padding: EdgeInsets.only(top: 40.0),
+                child: Image.asset('assets/octopus.png'),
+              ),
             ),
 
             // login in centre of page
@@ -62,21 +61,21 @@ class _LoginState extends State<Login> {
             ),
           
             // email address
-              Container(
-                child: Center(
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 40.0),
-                    child: Text(
-                      'Email Address:',
-                      style: TextStyle(
-                        fontSize: 30.0,
-                        color: Colors.amberAccent,
-                        fontFamily: 'Gotham',
-                        ),
+            Container(
+              child: Center(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 40.0),
+                  child: Text(
+                    'Email Address:',
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      color: Colors.amberAccent,
+                      fontFamily: 'Gotham',
                       ),
                     ),
                   ),
                 ),
+              ),
             
             // space to enter email
             Container(
