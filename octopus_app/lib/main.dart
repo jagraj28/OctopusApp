@@ -19,49 +19,50 @@ class _HomeState extends State<Home> {
     return Scaffold(
 
       backgroundColor: Colors.deepPurple[900],
-      resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomInset: true,
 
       // code for entire body
-      body: Stack(
-        fit: StackFit.expand,
+      body: SingleChildScrollView(
+        
+        child: Column(
 
         // top end of page
         children: <Widget>[
           Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-
+              Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 80.0),
+                child: Text(
+                  'Welcome Back!',
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    color: Colors.white,
+                    fontFamily: 'Gotham',
+                  ),
+                ),
+              ),
               // octopus image
               Padding(
-                padding: EdgeInsets.only(top: 100.0, right: 30.0),
+                padding: EdgeInsets.only(top: 40.0),
                 child: Image.asset('assets/octopus.png'),
-                ),
-              ],
-            ),
-
-          // Welcome message
-          Padding(
-            padding: const EdgeInsets.only(top: 150.0, left: 40.0),
-            child: Text(
-              'Welcome\n   Back!',
-              style: TextStyle(
-                fontSize: 30.0,
-                color: Colors.white,
-                fontFamily: 'Gotham',
-            ),
+              ),
+            ],
           ),
-        ),
 
           // login in centre of page
           Container(
             child: Center(
-              child: Text(
-                'Login',
-                style: TextStyle(
-                  decoration: TextDecoration.underline,
-                  fontSize: 35.0,
-                  color: Colors.white,
-                  fontFamily: 'Gotham',
+              child: Padding(
+                padding: EdgeInsets.only(top: 70.0),
+                child: Text(
+                  'Login',
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    fontSize: 35.0,
+                    color: Colors.white,
+                    fontFamily: 'Gotham',
+                  ),
                 ),
               ),
             ),
@@ -71,7 +72,7 @@ class _HomeState extends State<Home> {
             Container(
               child: Center(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 120.0),
+                  padding: EdgeInsets.only(top: 40.0),
                   child: Text(
                     'Email Address:',
                     style: TextStyle(
@@ -86,7 +87,7 @@ class _HomeState extends State<Home> {
           
           // space to enter email
           Container(
-            margin: EdgeInsets.only(top: 610.0, left: 50.0, right: 50.0, bottom: 370.0),
+            margin: EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
             decoration: BoxDecoration(
               border: Border(bottom: BorderSide(color: Colors.grey)),
             ),
@@ -110,7 +111,7 @@ class _HomeState extends State<Home> {
           Container(
             child: Center(
               child: Padding(
-                padding: const EdgeInsets.only(top: 380.0),
+                padding: EdgeInsets.only(top: 40.0),
                 child: Text(
                   'Password:',
                   style: TextStyle(
@@ -125,7 +126,7 @@ class _HomeState extends State<Home> {
 
           /// space to enter password
           Container(
-            margin: EdgeInsets.only(top: 740.0, left: 50.0, right: 50.0, bottom: 240.0),
+            margin: EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
             decoration: BoxDecoration(
               border: Border(bottom: BorderSide(color: Colors.grey)),
             ),
@@ -149,7 +150,7 @@ class _HomeState extends State<Home> {
           Container(
             child: Center(
               child: Padding(
-                padding: const EdgeInsets.only(top: 640.0),
+                padding: EdgeInsets.only(top: 40.0),
                 child: Text(
                   'Forgot Password?',
                   style: TextStyle(
@@ -165,7 +166,7 @@ class _HomeState extends State<Home> {
           // login button
           Container(
             child: Padding(
-              padding: const EdgeInsets.only(top: 750.0),
+              padding: EdgeInsets.only(top: 20.0),
               child: Center(
                 child: RaisedButton(
                   onPressed: () {},
@@ -184,6 +185,7 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
+    ),
     );
   }
 }
