@@ -162,7 +162,7 @@ class _LoginState extends State<Login> {
                 child: Center(
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, '/home');
+                      Navigator.pushReplacementNamed(context, '/navigation');
                     },
                     color: Colors.greenAccent,
                     child: Text(

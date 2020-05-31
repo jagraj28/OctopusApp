@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 class Account extends StatefulWidget {
   @override
@@ -14,29 +13,17 @@ class _AccountState extends State<Account> {
     return Scaffold(
       backgroundColor: Colors.deepPurple[900],
       resizeToAvoidBottomInset: true,
-      bottomNavigationBar: CurvedNavigationBar(
-        color: Colors.white,
-        backgroundColor: Colors.deepPurple[900],
-        buttonBackgroundColor: Colors.white,
-        height: 60.0,
-        items: <Widget>[
-          Icon(Icons.home, size: 35),
-          Icon(Icons.remove_red_eye, size: 35),
-          Icon(Icons.payment, size: 35),
-          Icon(Icons.account_circle, size: 35),
-        ],
-        animationDuration: Duration(
-          milliseconds: 200,
-        ),
-        animationCurve: Curves.bounceInOut,
-        onTap: (index) {
-          setState(() {
-            index = index;
-          });
-        },
-      ),
 
-      body: Container(),
+      body: Center(
+        child: Text(
+          'Account',
+          style: TextStyle(
+            fontSize: 40.0,
+            color: Colors.white,
+            fontFamily: 'Gotham',
+          ),
+        ),
+      ),
     );
   }
 }

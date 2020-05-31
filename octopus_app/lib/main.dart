@@ -4,6 +4,7 @@ import 'package:octopus_app/pages/home.dart';
 import 'package:octopus_app/pages/readings.dart';
 import 'package:octopus_app/pages/bills.dart';
 import 'package:octopus_app/pages/account.dart';
+import 'package:octopus_app/pages/navigation.dart';
 
 void main() => runApp(MaterialApp(
   initialRoute: '/login',
@@ -13,6 +14,7 @@ void main() => runApp(MaterialApp(
     '/readings': (context) => Readings(),
     '/bills': (context) => Bills(),
     '/account': (context) => Account(),
+    '/navigation': (context) => Navigation(),
   },
   )
 );
