@@ -18,12 +18,11 @@ class _ReadingsState extends State<Readings> {
       body: Container(
         child: SingleChildScrollView(
           child: Column(
-
             children: <Widget>[
               Center(
                 child: Container(
                   child: Padding(
-                    padding: EdgeInsets.only(top: 100.0),
+                    padding: EdgeInsets.only(top: 80.0),
                     child: Text(
                       'Meter Readings',
                       style: TextStyle(
@@ -39,7 +38,7 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 80.0, right: 220.0),
+                  padding: EdgeInsets.only(top: 60.0, right: 220.0),
                   child: Text(
                     'Electricity',
                     style: TextStyle(
@@ -75,7 +74,7 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 100.0, right: 300.0),
+                  padding: EdgeInsets.only(top: 60.0, right: 300.0),
                   child: Text(
                     'Gas',
                     style: TextStyle(
@@ -110,12 +109,32 @@ class _ReadingsState extends State<Readings> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 60.0),
+                child: Padding(
+                  padding: EdgeInsets.only(top: 30.0),
+                  child: Center(
+                    child: RaisedButton(
+                      onPressed: () {},
+                      color: Colors.greenAccent[400],
+                      child: Text(
+                        'Submit',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 25.0,
+                          fontFamily: 'Gotham',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 40.0),
                 padding: const EdgeInsets.all(25.0),
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
-                    color: Colors.amberAccent,
+                    color: Colors.amberAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
@@ -128,6 +147,29 @@ class _ReadingsState extends State<Readings> {
                   ),
                 ),
               ),
+
+              Container(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 40.0),
+                  child: Center(
+                    child: RaisedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/past_readings');
+                      },
+                      color: Colors.amberAccent[400],
+                      child: Text(
+                        'View Past Readings',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 25.0,
+                          fontFamily: 'Gotham',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              
             ],
           ),
         ),

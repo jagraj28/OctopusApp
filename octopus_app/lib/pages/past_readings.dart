@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Account extends StatefulWidget {
+class PastReadings extends StatefulWidget {
   @override
-  _AccountState createState() => new _AccountState();
+  _PastReadingsState createState() => new _PastReadingsState();
 }
 
-// widget for Account page
-class _AccountState extends State<Account> {
+// widget for PastReadings page
+class _PastReadingsState extends State<PastReadings> {
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class _AccountState extends State<Account> {
                   child: Padding(
                     padding: EdgeInsets.only(top: 80.0),
                     child: Text(
-                      'My Account',
+                      'Past Readings',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
                         fontSize: 30.0,

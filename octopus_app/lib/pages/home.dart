@@ -18,12 +18,11 @@ class _HomeState extends State<Home> {
       body: Container(
         child: SingleChildScrollView(
           child: Column(
-
             children: <Widget>[
               Center(
                 child: Container(
                   child: Padding(
-                    padding: EdgeInsets.only(top: 100.0),
+                    padding: EdgeInsets.only(top: 80.0),
                     child: Text(
                       'Account Balance',
                       style: TextStyle(
@@ -39,8 +38,8 @@ class _HomeState extends State<Home> {
 
               Center(
                 child: Container(
-                  margin: const EdgeInsets.only(top: 30.0),
-                  padding: const EdgeInsets.all(25.0),
+                  margin: const EdgeInsets.only(top: 20.0),
+                  padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 3.0,
@@ -60,7 +59,7 @@ class _HomeState extends State<Home> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 60.0),
+                margin: const EdgeInsets.only(top: 40.0),
                 child: Text(
                     'Tariff:',
                     style: TextStyle(
@@ -72,8 +71,8 @@ class _HomeState extends State<Home> {
               ),
 
               Container(
-                  margin: const EdgeInsets.only(top: 20.0),
-                  padding: const EdgeInsets.all(25.0),
+                  margin: const EdgeInsets.only(top: 15.0),
+                  padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 3.0,
@@ -86,15 +85,83 @@ class _HomeState extends State<Home> {
                     style: TextStyle(
                       fontSize: 20.0,
                       fontFamily: 'Gotham',
-                      color: Colors.amberAccent,
+                      color: Colors.amberAccent[100],
                   ),
                 ),
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 50.0),
+                  margin: const EdgeInsets.only(top: 5.0),
+                  padding: const EdgeInsets.all(20.0),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 3.0,
+                      color: Colors.pink[400],
+                    ),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Text(
+                    'Renewal Date: 03/03/2021',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.amberAccent[100],
+                  ),
+                ),
+              ),
+
+              Container(
+                child: Center(
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        margin: const EdgeInsets.only(top: 5.0, left: 35.0),
+                        padding: const EdgeInsets.all(25.0),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            width: 3.0,
+                            color: Colors.pink[400],
+                          ),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: Text(
+                          ' Electricity:\n\n16.36p/kWh\n21.43p/day',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            fontFamily: 'Gotham',
+                            color: Colors.amberAccent[100],
+                          ),
+                        ),
+                      ),
+                    
+                      Container(
+                        margin: const EdgeInsets.only(top: 5.0, left: 5.0),
+                        padding: const EdgeInsets.all(25.0),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            width: 3.0,
+                            color: Colors.pink[400],
+                          ),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: Text(
+                          '     Gas:\n\n3.86p/kWh\n16.84p/day',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            fontFamily: 'Gotham',
+                            color: Colors.amberAccent[100],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 40.0),
                 child: Text(
-                    'Payments:',
+                    'Blog:',
                     style: TextStyle(
                       fontSize: 25.0,
                       fontFamily: 'Gotham',
@@ -103,62 +170,22 @@ class _HomeState extends State<Home> {
                   ),
               ),
 
-            Container(
-              margin: const EdgeInsets.only(top: 20.0),
-              padding: const EdgeInsets.all(25.0),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  width: 3.0,
-                  color: Colors.pink[400],
-                ),
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              child: Text(
-                'Amount: £68.36',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontFamily: 'Gotham',
-                  color: Colors.amberAccent,
-                ),
-              ),
-            ),
-
-            Container(
-              margin: const EdgeInsets.only(top: 5.0),
-              padding: const EdgeInsets.all(25.0),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  width: 3.0,
-                  color: Colors.pink[400],
-                ),
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              child: Text(
-                'Date: 5th of the month',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontFamily: 'Gotham',
-                  color: Colors.amberAccent,
-                ),
-              ),
-            ),
-
-            Container(
-              margin: const EdgeInsets.only(top: 5.0),
-              padding: const EdgeInsets.all(25.0),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  width: 3.0,
-                  color: Colors.pink[400],
-                ),
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              child: Text(
-                'Type: Direct Debit',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontFamily: 'Gotham',
-                  color: Colors.amberAccent,
+              Container(
+                  margin: const EdgeInsets.only(top: 15.0),
+                  padding: const EdgeInsets.all(20.0),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 3.0,
+                      color: Colors.pink[400],
+                    ),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Text(
+                    'Check out our blog here!',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.amberAccent[100],
                   ),
                 ),
               ),

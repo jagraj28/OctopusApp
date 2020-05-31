@@ -41,30 +41,12 @@ class _LoginState extends State<Login> {
                 child: Image.asset('assets/octopus.png'),
               ),
             ),
-
-            // login in centre of page
-            Container(
-              child: Center(
-                child: Padding(
-                  padding: EdgeInsets.only(top: 60.0),
-                  child: Text(
-                    'Login',
-                    style: TextStyle(
-                      decoration: TextDecoration.underline,
-                      fontSize: 30.0,
-                      color: Colors.white,
-                      fontFamily: 'Gotham',
-                    ),
-                  ),
-                ),
-              ),
-            ),
           
             // email address
             Container(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 40.0),
+                  padding: EdgeInsets.only(top: 100.0),
                   child: Text(
                     'Email Address:',
                     style: TextStyle(
@@ -76,12 +58,17 @@ class _LoginState extends State<Login> {
                   ),
                 ),
               ),
-            
+
             // space to enter email
             Container(
-              margin: EdgeInsets.only(top: 10.0, left: 50.0, right: 50.0),
+              margin: const EdgeInsets.only(top: 15.0, left: 50.0, right: 50.0),
+              padding: const EdgeInsets.only(left: 10.0),
               decoration: BoxDecoration(
-                border: Border(bottom: BorderSide(color: Colors.grey)),
+                border: Border.all(
+                  width: 2.0,
+                  color: Colors.white,
+                ),
+                borderRadius: BorderRadius.circular(5.0),
               ),
               child: Center(
                 child: TextField(
@@ -92,7 +79,7 @@ class _LoginState extends State<Login> {
                   ),
                   decoration: InputDecoration(
                     hintText: 'Email',
-                    hintStyle: TextStyle(color: Colors.white),
+                    hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),
@@ -103,7 +90,7 @@ class _LoginState extends State<Login> {
             Container(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 40.0),
+                  padding: EdgeInsets.only(top: 25.0),
                   child: Text(
                     'Password:',
                     style: TextStyle(
@@ -118,20 +105,25 @@ class _LoginState extends State<Login> {
 
             /// space to enter password
             Container(
-              margin: EdgeInsets.only(top: 10.0, left: 50.0, right: 50.0),
+              margin: const EdgeInsets.only(top: 15.0, left: 50.0, right: 50.0),
+              padding: const EdgeInsets.only(left: 10.0),
               decoration: BoxDecoration(
-                border: Border(bottom: BorderSide(color: Colors.grey)),
+                border: Border.all(
+                  width: 2.0,
+                  color: Colors.white,
+                ),
+                borderRadius: BorderRadius.circular(5.0),
               ),
               child: Center(
                 child: TextField(
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.grey,
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
                   ),
                   decoration: InputDecoration(
                     hintText: 'Password',
-                    hintStyle: TextStyle(color: Colors.white),
+                    hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),
@@ -164,12 +156,12 @@ class _LoginState extends State<Login> {
                     onPressed: () {
                       Navigator.pushReplacementNamed(context, '/navigation');
                     },
-                    color: Colors.greenAccent,
+                    color: Colors.greenAccent[400],
                     child: Text(
                       'Login',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 20.0,
+                        fontSize: 25.0,
                         fontFamily: 'Gotham',
                       ),
                     ),

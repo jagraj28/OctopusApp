@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Account extends StatefulWidget {
+class Payment extends StatefulWidget {
   @override
-  _AccountState createState() => new _AccountState();
+  _PaymentState createState() => new _PaymentState();
 }
 
-// widget for Account page
-class _AccountState extends State<Account> {
+// widget for Payment page
+class _PaymentState extends State<Payment> {
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class _AccountState extends State<Account> {
                   child: Padding(
                     padding: EdgeInsets.only(top: 80.0),
                     child: Text(
-                      'My Account',
+                      'One-Off Payment',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
                         fontSize: 30.0,
