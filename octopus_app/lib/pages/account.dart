@@ -11,16 +11,32 @@ class _AccountState extends State<Account> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       backgroundColor: Colors.deepPurple[900],
       resizeToAvoidBottomInset: true,
 
-      body: Center(
-        child: Text(
-          'Account',
-          style: TextStyle(
-            fontSize: 40.0,
-            color: Colors.white,
-            fontFamily: 'Gotham',
+      body: Container(
+        child: SingleChildScrollView(
+          child: Column(
+
+            children: <Widget>[
+              Center(
+                child: Container(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 100.0),
+                    child: Text(
+                      'My Account',
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        fontSize: 40.0,
+                        color: Colors.white,
+                        fontFamily: 'Gotham',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),

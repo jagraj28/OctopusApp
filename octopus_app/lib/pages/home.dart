@@ -11,6 +11,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       backgroundColor: Colors.deepPurple[900],
       resizeToAvoidBottomInset: true,
 
@@ -28,7 +29,7 @@ class _HomeState extends State<Home> {
                       style: TextStyle(
                         decoration: TextDecoration.underline,
                         fontSize: 40.0,
-                        color: Colors.greenAccent,
+                        color: Colors.white,
                         fontFamily: 'Gotham',
                       ),
                     ),
@@ -50,7 +51,7 @@ class _HomeState extends State<Home> {
                   child: Text(
                     '£76.89',
                     style: TextStyle(
-                      fontSize: 30.0,
+                      fontSize: 35.0,
                       fontFamily: 'Gotham',
                       color: Colors.greenAccent[200],
                     ),
@@ -158,11 +159,9 @@ class _HomeState extends State<Home> {
                   fontSize: 30.0,
                   fontFamily: 'Gotham',
                   color: Colors.amberAccent,
+                  ),
                 ),
               ),
-            ),
-
-
             ],
           ),
         ),
