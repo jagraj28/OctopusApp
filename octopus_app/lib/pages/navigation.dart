@@ -35,10 +35,10 @@ class _NavigationState extends State<Navigation> {
         buttonBackgroundColor: Colors.white,
         height: 60.0,
         items: <Widget>[
-          Icon(Icons.home, size: 40),
-          Icon(Icons.remove_red_eye, size: 40),
-          Icon(Icons.payment, size: 40),
-          Icon(Icons.account_circle, size: 40),
+          Icon(Icons.home, size: 30),
+          Icon(Icons.remove_red_eye, size: 30),
+          Icon(Icons.payment, size: 30),
+          Icon(Icons.account_circle, size: 30),
         ],
         animationDuration: Duration(
           milliseconds: 200,

@@ -28,7 +28,7 @@ class _BillsState extends State<Bills> {
                       'My Bills',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
-                        fontSize: 40.0,
+                        fontSize: 30.0,
                         color: Colors.white,
                         fontFamily: 'Gotham',
                       ),

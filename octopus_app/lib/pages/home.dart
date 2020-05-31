@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
                       'Account Balance',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
-                        fontSize: 40.0,
+                        fontSize: 30.0,
                         color: Colors.white,
                         fontFamily: 'Gotham',
                       ),
@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
                   child: Text(
                     '£76.89',
                     style: TextStyle(
-                      fontSize: 35.0,
+                      fontSize: 25.0,
                       fontFamily: 'Gotham',
                       color: Colors.greenAccent[200],
                     ),
@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
                 child: Text(
                     'Tariff:',
                     style: TextStyle(
-                      fontSize: 30.0,
+                      fontSize: 25.0,
                       fontFamily: 'Gotham',
                       color: Colors.white,
                     ),
@@ -84,7 +84,7 @@ class _HomeState extends State<Home> {
                   child: Text(
                     'Octopus 12M Fixed',
                     style: TextStyle(
-                      fontSize: 30.0,
+                      fontSize: 20.0,
                       fontFamily: 'Gotham',
                       color: Colors.amberAccent,
                   ),
@@ -96,7 +96,7 @@ class _HomeState extends State<Home> {
                 child: Text(
                     'Payments:',
                     style: TextStyle(
-                      fontSize: 30.0,
+                      fontSize: 25.0,
                       fontFamily: 'Gotham',
                       color: Colors.white,
                     ),
@@ -116,7 +116,7 @@ class _HomeState extends State<Home> {
               child: Text(
                 'Amount: £68.36',
                 style: TextStyle(
-                  fontSize: 30.0,
+                  fontSize: 20.0,
                   fontFamily: 'Gotham',
                   color: Colors.amberAccent,
                 ),
@@ -136,7 +136,7 @@ class _HomeState extends State<Home> {
               child: Text(
                 'Date: 5th of the month',
                 style: TextStyle(
-                  fontSize: 30.0,
+                  fontSize: 20.0,
                   fontFamily: 'Gotham',
                   color: Colors.amberAccent,
                 ),
@@ -156,7 +156,7 @@ class _HomeState extends State<Home> {
               child: Text(
                 'Type: Direct Debit',
                 style: TextStyle(
-                  fontSize: 30.0,
+                  fontSize: 20.0,
                   fontFamily: 'Gotham',
                   color: Colors.amberAccent,
                   ),

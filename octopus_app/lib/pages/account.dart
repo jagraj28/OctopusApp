@@ -28,7 +28,7 @@ class _AccountState extends State<Account> {
                       'My Account',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
-                        fontSize: 40.0,
+                        fontSize: 30.0,
                         color: Colors.white,
                         fontFamily: 'Gotham',
                       ),

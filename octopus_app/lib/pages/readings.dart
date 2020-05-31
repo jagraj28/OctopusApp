@@ -28,7 +28,7 @@ class _ReadingsState extends State<Readings> {
                       'Meter Readings',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
-                        fontSize: 40.0,
+                        fontSize: 30.0,
                         color: Colors.white,
                         fontFamily: 'Gotham',
                       ),
@@ -39,12 +39,12 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 80.0, right: 240.0),
+                  padding: EdgeInsets.only(top: 80.0, right: 220.0),
                   child: Text(
                     'Electricity',
                     style: TextStyle(
                       decoration: TextDecoration.underline,
-                      fontSize: 30.0,
+                      fontSize: 25.0,
                       color: Colors.lightBlueAccent,
                       fontFamily: 'Gotham',
                     ),
@@ -53,7 +53,7 @@ class _ReadingsState extends State<Readings> {
               ),
 
               Container(
-                margin: EdgeInsets.only(top: 30.0, left: 60.0, right: 60.0),
+                margin: EdgeInsets.only(top: 20.0, left: 60.0, right: 60.0),
                 decoration: BoxDecoration(
                   border: Border(bottom: BorderSide(color: Colors.grey)),
                 ),
@@ -61,7 +61,7 @@ class _ReadingsState extends State<Readings> {
                   child: TextField(
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 25.0,
+                      fontSize: 20.0,
                       fontFamily: 'Gotham',
                     ),
                     decoration: InputDecoration(
@@ -75,12 +75,12 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 100.0, right: 340.0),
+                  padding: EdgeInsets.only(top: 100.0, right: 300.0),
                   child: Text(
                     'Gas',
                     style: TextStyle(
                       decoration: TextDecoration.underline,
-                      fontSize: 30.0,
+                      fontSize: 25.0,
                       color: Colors.lightGreenAccent,
                       fontFamily: 'Gotham',
                     ),
@@ -89,7 +89,7 @@ class _ReadingsState extends State<Readings> {
               ),
 
               Container(
-                margin: EdgeInsets.only(top: 30.0, left: 60.0, right: 60.0),
+                margin: EdgeInsets.only(top: 20.0, left: 60.0, right: 60.0),
                 decoration: BoxDecoration(
                   border: Border(bottom: BorderSide(color: Colors.grey)),
                 ),
@@ -97,7 +97,7 @@ class _ReadingsState extends State<Readings> {
                   child: TextField(
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 25.0,
+                      fontSize: 20.0,
                       fontFamily: 'Gotham',
                     ),
                     decoration: InputDecoration(
@@ -122,7 +122,7 @@ class _ReadingsState extends State<Readings> {
                 child: Text(
                   'Please don\'t submit any red\n    digits from your meter!',
                   style: TextStyle(
-                    fontSize: 25.0,
+                    fontSize: 20.0,
                     fontFamily: 'Gotham',
                     color: Colors.red,
                   ),

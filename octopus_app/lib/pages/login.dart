@@ -37,7 +37,7 @@ class _LoginState extends State<Login> {
                 // octopus image
             Container(
               child: Padding(
-                padding: EdgeInsets.only(top: 40.0),
+                padding: EdgeInsets.only(top: 30.0),
                 child: Image.asset('assets/octopus.png'),
               ),
             ),
@@ -46,12 +46,12 @@ class _LoginState extends State<Login> {
             Container(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 70.0),
+                  padding: EdgeInsets.only(top: 60.0),
                   child: Text(
                     'Login',
                     style: TextStyle(
                       decoration: TextDecoration.underline,
-                      fontSize: 35.0,
+                      fontSize: 30.0,
                       color: Colors.white,
                       fontFamily: 'Gotham',
                     ),
@@ -68,7 +68,7 @@ class _LoginState extends State<Login> {
                   child: Text(
                     'Email Address:',
                     style: TextStyle(
-                      fontSize: 30.0,
+                      fontSize: 25.0,
                       color: Colors.amberAccent,
                       fontFamily: 'Gotham',
                       ),
@@ -79,7 +79,7 @@ class _LoginState extends State<Login> {
             
             // space to enter email
             Container(
-              margin: EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
+              margin: EdgeInsets.only(top: 10.0, left: 50.0, right: 50.0),
               decoration: BoxDecoration(
                 border: Border(bottom: BorderSide(color: Colors.grey)),
               ),
@@ -87,7 +87,7 @@ class _LoginState extends State<Login> {
                 child: TextField(
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 25.0,
+                    fontSize: 20.0,
                     fontFamily: 'Gotham',
                   ),
                   decoration: InputDecoration(
@@ -107,7 +107,7 @@ class _LoginState extends State<Login> {
                   child: Text(
                     'Password:',
                     style: TextStyle(
-                      fontSize: 30.0,
+                      fontSize: 25.0,
                       color: Colors.amberAccent,
                       fontFamily: 'Gotham',
                       ),
@@ -118,7 +118,7 @@ class _LoginState extends State<Login> {
 
             /// space to enter password
             Container(
-              margin: EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
+              margin: EdgeInsets.only(top: 10.0, left: 50.0, right: 50.0),
               decoration: BoxDecoration(
                 border: Border(bottom: BorderSide(color: Colors.grey)),
               ),
@@ -126,7 +126,7 @@ class _LoginState extends State<Login> {
                 child: TextField(
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 25.0,
+                    fontSize: 20.0,
                     fontFamily: 'Gotham',
                   ),
                   decoration: InputDecoration(
@@ -146,7 +146,7 @@ class _LoginState extends State<Login> {
                   child: Text(
                     'Forgot Password?',
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 15.0,
                       color: Colors.redAccent,
                       fontFamily: 'Gotham',
                       ),
@@ -169,7 +169,7 @@ class _LoginState extends State<Login> {
                       'Login',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 30.0,
+                        fontSize: 20.0,
                         fontFamily: 'Gotham',
                       ),
                     ),
