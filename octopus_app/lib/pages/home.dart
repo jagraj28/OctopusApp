@@ -52,7 +52,7 @@ class _HomeState extends State<Home> {
                     style: TextStyle(
                       fontSize: 25.0,
                       fontFamily: 'Gotham',
-                      color: Colors.greenAccent[200],
+                      color: Colors.greenAccent[400],
                     ),
                   ),
                 )
@@ -85,7 +85,7 @@ class _HomeState extends State<Home> {
                     style: TextStyle(
                       fontSize: 20.0,
                       fontFamily: 'Gotham',
-                      color: Colors.amberAccent[100],
+                      color: Colors.white,
                   ),
                 ),
               ),
@@ -105,7 +105,7 @@ class _HomeState extends State<Home> {
                     style: TextStyle(
                       fontSize: 20.0,
                       fontFamily: 'Gotham',
-                      color: Colors.amberAccent[100],
+                      color: Colors.white,
                   ),
                 ),
               ),
@@ -129,7 +129,7 @@ class _HomeState extends State<Home> {
                           style: TextStyle(
                             fontSize: 20.0,
                             fontFamily: 'Gotham',
-                            color: Colors.amberAccent[100],
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -149,7 +149,7 @@ class _HomeState extends State<Home> {
                           style: TextStyle(
                             fontSize: 20.0,
                             fontFamily: 'Gotham',
-                            color: Colors.amberAccent[100],
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -159,36 +159,25 @@ class _HomeState extends State<Home> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
-                child: Text(
-                    'Blog:',
-                    style: TextStyle(
-                      fontSize: 25.0,
-                      fontFamily: 'Gotham',
-                      color: Colors.white,
+                child: Padding(
+                  padding: EdgeInsets.only(top: 30.0),
+                  child: Center(
+                    child: RaisedButton(
+                      onPressed: () {},
+                      color: Colors.amberAccent[400],
+                      child: Text(
+                        'Help and Support',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
+                          fontFamily: 'Gotham',
+                        ),
+                      ),
                     ),
-                  ),
-              ),
-
-              Container(
-                  margin: const EdgeInsets.only(top: 15.0),
-                  padding: const EdgeInsets.all(20.0),
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      width: 3.0,
-                      color: Colors.pink[400],
-                    ),
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  child: Text(
-                    'Check out our blog here!',
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontFamily: 'Gotham',
-                      color: Colors.amberAccent[100],
                   ),
                 ),
               ),
+
             ],
           ),
         ),

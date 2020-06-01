@@ -38,7 +38,7 @@ class _BillsState extends State<Bills> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
+                margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
                     'Amount:',
                     style: TextStyle(
@@ -50,8 +50,8 @@ class _BillsState extends State<Bills> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 15.0),
-                padding: const EdgeInsets.all(25.0),
+                margin: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
@@ -70,9 +70,26 @@ class _BillsState extends State<Bills> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
+                child: Center(
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.green[400],
+                    child: Text(
+                      'Edit',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.0,
+                        fontFamily: 'Gotham',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
-                    'Date: ',
+                    'Date:',
                     style: TextStyle(
                       fontSize: 25.0,
                       fontFamily: 'Gotham',
@@ -82,8 +99,8 @@ class _BillsState extends State<Bills> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 15.0),
-                padding: const EdgeInsets.all(25.0),
+                margin: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
@@ -92,7 +109,7 @@ class _BillsState extends State<Bills> {
                   borderRadius: BorderRadius.circular(20.0),
                 ),
                 child: Text(
-                  '5th of the month',
+                  '5th of every month',
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
@@ -102,9 +119,26 @@ class _BillsState extends State<Bills> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
+                child: Center(
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.green[400],
+                    child: Text(
+                      'Edit',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.0,
+                        fontFamily: 'Gotham',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
-                    'Type: ',
+                    'Type:',
                     style: TextStyle(
                       fontSize: 25.0,
                       fontFamily: 'Gotham',
@@ -114,8 +148,8 @@ class _BillsState extends State<Bills> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 15.0),
-                padding: const EdgeInsets.all(25.0),
+                margin: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
@@ -134,8 +168,25 @@ class _BillsState extends State<Bills> {
               ),
 
               Container(
+                child: Center(
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.green[400],
+                    child: Text(
+                      'Edit',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.0,
+                        fontFamily: 'Gotham',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 40.0),
+                  padding: EdgeInsets.only(top: 30.0),
                   child: Center(
                     child: RaisedButton(
                       onPressed: () {
@@ -146,7 +197,27 @@ class _BillsState extends State<Bills> {
                         'Make a one-off payment?',
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 25.0,
+                          fontSize: 20.0,
+                          fontFamily: 'Gotham',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 20.0),
+                  child: Center(
+                    child: RaisedButton(
+                      onPressed: () {},
+                      color: Colors.amberAccent[400],
+                      child: Text(
+                        'View Past Payments',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
                           fontFamily: 'Gotham',
                         ),
                       ),

@@ -36,6 +36,226 @@ class _AccountState extends State<Account> {
                   ),
                 ),
               ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 30.0),
+                padding: const EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 3.0,
+                      color: Colors.lightBlueAccent,
+                    ),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                child: Text(
+                  'A-123456789',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.greenAccent[400],
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 30.0),
+                child: Text(
+                    'Name:',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.white,
+                    ),
+                  ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 3.0,
+                    color: Colors.pink[400],
+                  ),
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                child: Text(
+                  'Jagraj Singh',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.amberAccent[100],
+                  ),
+                ),
+              ),
+
+              Container(
+                child: Center(
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.green[400],
+                    child: Text(
+                      'Edit',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.0,
+                        fontFamily: 'Gotham',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 30.0),
+                child: Text(
+                    'Address:',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.white,
+                    ),
+                  ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 3.0,
+                    color: Colors.pink[400],
+                  ),
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                child: Text(
+                  '123 Fake Street\nFakeville\nFA1 KE2',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.amberAccent[100],
+                  ),
+                ),
+              ),
+
+              Container(
+                child: Center(
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.green[400],
+                    child: Text(
+                      'Edit',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.0,
+                        fontFamily: 'Gotham',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 30.0),
+                child: Text(
+                    'Contact Number:',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.white,
+                    ),
+                  ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 3.0,
+                    color: Colors.pink[400],
+                  ),
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                child: Text(
+                  '07777777777',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.amberAccent[100],
+                  ),
+                ),
+              ),
+
+              Container(
+                child: Center(
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.green[400],
+                    child: Text(
+                      'Edit',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.0,
+                        fontFamily: 'Gotham',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 30.0),
+                child: Text(
+                    'Referral Link:',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.white,
+                    ),
+                  ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
+                padding: const EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 3.0,
+                    color: Colors.pink[400],
+                  ),
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                child: Text(
+                  'share.octopus.energy/panda-oscar-123',
+                  style: TextStyle(
+                    fontSize: 15.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.amberAccent[100],
+                  ),
+                ),
+              ),
+
+              Container(
+              child: Padding(
+                padding: EdgeInsets.only(top: 25.0, bottom: 40.0),
+                child: Center(
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.amberAccent[400],
+                    child: Text(
+                      'Change Password',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20.0,
+                        fontFamily: 'Gotham',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
             ],
           ),
         ),

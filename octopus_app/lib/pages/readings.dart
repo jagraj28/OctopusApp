@@ -38,7 +38,7 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 60.0, right: 220.0),
+                  padding: EdgeInsets.only(top: 50.0, right: 220.0),
                   child: Text(
                     'Electricity',
                     style: TextStyle(
@@ -65,7 +65,7 @@ class _ReadingsState extends State<Readings> {
                     ),
                     decoration: InputDecoration(
                       hintText: 'Reading',
-                      hintStyle: TextStyle(color: Colors.white),
+                      hintStyle: TextStyle(color: Colors.grey),
                       border: InputBorder.none,
                     ),
                   ),
@@ -101,7 +101,7 @@ class _ReadingsState extends State<Readings> {
                     ),
                     decoration: InputDecoration(
                       hintText: 'Reading',
-                      hintStyle: TextStyle(color: Colors.white),
+                      hintStyle: TextStyle(color: Colors.grey),
                       border: InputBorder.none,
                     ),
                   ),
@@ -119,7 +119,7 @@ class _ReadingsState extends State<Readings> {
                         'Submit',
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 25.0,
+                          fontSize: 20.0,
                           fontFamily: 'Gotham',
                         ),
                       ),
@@ -161,7 +161,7 @@ class _ReadingsState extends State<Readings> {
                         'View Past Readings',
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 25.0,
+                          fontSize: 20.0,
                           fontFamily: 'Gotham',
                         ),
                       ),

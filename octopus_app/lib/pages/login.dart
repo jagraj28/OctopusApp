@@ -37,7 +37,7 @@ class _LoginState extends State<Login> {
                 // octopus image
             Container(
               child: Padding(
-                padding: EdgeInsets.only(top: 30.0),
+                padding: EdgeInsets.only(top: 40.0),
                 child: Image.asset('assets/octopus.png'),
               ),
             ),
@@ -46,7 +46,7 @@ class _LoginState extends State<Login> {
             Container(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 100.0),
+                  padding: EdgeInsets.only(top: 80.0),
                   child: Text(
                     'Email Address:',
                     style: TextStyle(
@@ -117,7 +117,7 @@ class _LoginState extends State<Login> {
               child: Center(
                 child: TextField(
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.white,
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
                   ),
