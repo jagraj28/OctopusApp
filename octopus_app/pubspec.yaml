@@ -22,6 +22,8 @@ environment:
 
 dependencies:
   curved_navigation_bar:
+  carousel_slider:
+  intl:
   flutter:
     sdk: flutter
 

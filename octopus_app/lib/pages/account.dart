@@ -52,13 +52,13 @@ class _AccountState extends State<Account> {
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
-                    color: Colors.greenAccent[400],
+                    color: Colors.white,
                   ),
                 ),
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 30.0),
+                margin: const EdgeInsets.only(top: 40.0),
                 child: Text(
                     'Name:',
                     style: TextStyle(
@@ -84,7 +84,7 @@ class _AccountState extends State<Account> {
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
-                    color: Colors.amberAccent[100],
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -107,7 +107,7 @@ class _AccountState extends State<Account> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 30.0),
+                margin: const EdgeInsets.only(top: 40.0),
                 child: Text(
                     'Address:',
                     style: TextStyle(
@@ -133,7 +133,7 @@ class _AccountState extends State<Account> {
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
-                    color: Colors.amberAccent[100],
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -156,7 +156,7 @@ class _AccountState extends State<Account> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 30.0),
+                margin: const EdgeInsets.only(top: 40.0),
                 child: Text(
                     'Contact Number:',
                     style: TextStyle(
@@ -182,7 +182,7 @@ class _AccountState extends State<Account> {
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
-                    color: Colors.amberAccent[100],
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -205,56 +205,48 @@ class _AccountState extends State<Account> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 30.0),
-                child: Text(
-                    'Referral Link:',
-                    style: TextStyle(
-                      fontSize: 25.0,
-                      fontFamily: 'Gotham',
-                      color: Colors.white,
-                    ),
-                  ),
-              ),
-
-              Container(
-                margin: const EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
-                padding: const EdgeInsets.all(15.0),
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    width: 3.0,
-                    color: Colors.pink[400],
-                  ),
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                child: Text(
-                  'share.octopus.energy/panda-oscar-123',
-                  style: TextStyle(
-                    fontSize: 15.0,
-                    fontFamily: 'Gotham',
-                    color: Colors.amberAccent[100],
-                  ),
-                ),
-              ),
-
-              Container(
-              child: Padding(
-                padding: EdgeInsets.only(top: 25.0, bottom: 40.0),
-                child: Center(
-                  child: RaisedButton(
-                    onPressed: () {},
-                    color: Colors.amberAccent[400],
-                    child: Text(
-                      'Change Password',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20.0,
-                        fontFamily: 'Gotham',
+                child: Padding(
+                  padding: EdgeInsets.only(top: 30.0),
+                  child: Center(
+                    child: RaisedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/faq');
+                      },
+                      color: Colors.amberAccent[400],
+                      child: Text(
+                        'FAQ\'s',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
+                          fontFamily: 'Gotham',
+                        ),
                       ),
                     ),
                   ),
                 ),
               ),
-            ),
+
+              Container(
+                child: Padding(
+                  padding: EdgeInsets.only(bottom: 40.0),
+                  child: Center(
+                    child: RaisedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/help_support');
+                      },
+                      color: Colors.amberAccent[400],
+                      child: Text(
+                        'Help and Support',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
+                          fontFamily: 'Gotham',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
 
             ],
           ),

@@ -34,7 +34,8 @@ class _LoginState extends State<Login> {
                 ),
               ),
             ),
-                // octopus image
+            
+            // octopus image
             Container(
               child: Padding(
                 padding: EdgeInsets.only(top: 40.0),
@@ -51,7 +52,7 @@ class _LoginState extends State<Login> {
                     'Email Address:',
                     style: TextStyle(
                       fontSize: 25.0,
-                      color: Colors.amberAccent,
+                      color: Colors.white,
                       fontFamily: 'Gotham',
                       ),
                     ),
@@ -62,7 +63,7 @@ class _LoginState extends State<Login> {
             // space to enter email
             Container(
               margin: const EdgeInsets.only(top: 15.0, left: 50.0, right: 50.0),
-              padding: const EdgeInsets.only(left: 10.0),
+              padding: const EdgeInsets.only(left: 15.0),
               decoration: BoxDecoration(
                 border: Border.all(
                   width: 2.0,
@@ -95,7 +96,7 @@ class _LoginState extends State<Login> {
                     'Password:',
                     style: TextStyle(
                       fontSize: 25.0,
-                      color: Colors.amberAccent,
+                      color: Colors.white,
                       fontFamily: 'Gotham',
                       ),
                     ),
@@ -106,7 +107,7 @@ class _LoginState extends State<Login> {
             /// space to enter password
             Container(
               margin: const EdgeInsets.only(top: 15.0, left: 50.0, right: 50.0),
-              padding: const EdgeInsets.only(left: 10.0),
+              padding: const EdgeInsets.only(left: 15.0),
               decoration: BoxDecoration(
                 border: Border.all(
                   width: 2.0,
@@ -138,7 +139,7 @@ class _LoginState extends State<Login> {
                   child: Text(
                     'Forgot Password?',
                     style: TextStyle(
-                      fontSize: 15.0,
+                      fontSize: 20.0,
                       color: Colors.redAccent,
                       fontFamily: 'Gotham',
                       ),

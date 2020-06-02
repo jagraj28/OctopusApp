@@ -64,7 +64,7 @@ class _BillsState extends State<Bills> {
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
-                    color: Colors.amberAccent[100],
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -113,7 +113,7 @@ class _BillsState extends State<Bills> {
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
-                    color: Colors.amberAccent[100],
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -162,7 +162,7 @@ class _BillsState extends State<Bills> {
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
-                    color: Colors.amberAccent[100],
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -211,7 +211,9 @@ class _BillsState extends State<Bills> {
                   padding: EdgeInsets.only(top: 20.0),
                   child: Center(
                     child: RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/past_payments');
+                      },
                       color: Colors.amberAccent[400],
                       child: Text(
                         'View Past Payments',

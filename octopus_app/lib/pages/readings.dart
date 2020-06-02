@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class Readings extends StatefulWidget {
   @override
@@ -7,6 +8,8 @@ class Readings extends StatefulWidget {
 
 // widget for Readings page
 class _ReadingsState extends State<Readings> {
+
+  DateTime _dateTime;
 
   @override
   Widget build(BuildContext context) {
@@ -38,49 +41,13 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 50.0, right: 220.0),
+                  padding: EdgeInsets.only(top: 50.0),
                   child: Text(
                     'Electricity',
                     style: TextStyle(
                       decoration: TextDecoration.underline,
                       fontSize: 25.0,
-                      color: Colors.lightBlueAccent,
-                      fontFamily: 'Gotham',
-                    ),
-                  ),
-                ), 
-              ),
-
-              Container(
-                margin: EdgeInsets.only(top: 20.0, left: 60.0, right: 60.0),
-                decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(color: Colors.grey)),
-                ),
-                child: Center(
-                  child: TextField(
-                    style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20.0,
-                      fontFamily: 'Gotham',
-                    ),
-                    decoration: InputDecoration(
-                      hintText: 'Reading',
-                      hintStyle: TextStyle(color: Colors.grey),
-                      border: InputBorder.none,
-                    ),
-                  ),
-                ),
-              ),
-
-              Container(
-                child: Padding(
-                  padding: EdgeInsets.only(top: 60.0, right: 300.0),
-                  child: Text(
-                    'Gas',
-                    style: TextStyle(
-                      decoration: TextDecoration.underline,
-                      fontSize: 25.0,
-                      color: Colors.lightGreenAccent,
                       fontFamily: 'Gotham',
                     ),
                   ),
@@ -88,12 +55,18 @@ class _ReadingsState extends State<Readings> {
               ),
 
               Container(
-                margin: EdgeInsets.only(top: 20.0, left: 60.0, right: 60.0),
+                margin: const EdgeInsets.only(top: 20.0, left: 100.0, right: 100.0),
+                padding: const EdgeInsets.only(left: 15.0),
                 decoration: BoxDecoration(
-                  border: Border(bottom: BorderSide(color: Colors.grey)),
+                  border: Border.all(
+                    width: 2.0,
+                    color: Colors.white,
+                  ),
+                  borderRadius: BorderRadius.circular(5.0),
                 ),
                 child: Center(
                   child: TextField(
+                    keyboardType: TextInputType.number,
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20.0,
@@ -111,6 +84,78 @@ class _ReadingsState extends State<Readings> {
               Container(
                 child: Padding(
                   padding: EdgeInsets.only(top: 30.0),
+                  child: Text(
+                    'Gas',
+                    style: TextStyle(
+                      decoration: TextDecoration.underline,
+                      fontSize: 25.0,
+                      color: Colors.white,
+                      fontFamily: 'Gotham',
+                    ),
+                  ),
+                ), 
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 20.0, left: 100.0, right: 100.0),
+                padding: const EdgeInsets.only(left: 15.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 2.0,
+                    color: Colors.white,
+                  ),
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+                child: Center(
+                  child: TextField(
+                    keyboardType: TextInputType.number,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontFamily: 'Gotham',
+                    ),
+                    decoration: InputDecoration(
+                      hintText: 'Reading',
+                      hintStyle: TextStyle(color: Colors.grey),
+                      border: InputBorder.none,
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                padding: EdgeInsets.only(top: 20.0),
+                child: Center(
+                  child: Column(
+                    children: <Widget>[
+                      RaisedButton(
+                        child: Text(
+                          _dateTime == null ? 'Pick the date': DateFormat.yMMMMd('en_US').format(_dateTime),
+                          style: TextStyle(
+                            fontFamily: 'Gotham',
+                            fontSize: 20.0,
+                            color: Colors.black,
+                          ),
+                        ),
+                        onPressed: () {
+                          showDatePicker(
+                            context: context, 
+                            initialDate: DateTime.now(), 
+                            firstDate: DateTime(2018), 
+                            lastDate: DateTime.now(),
+                          ).then((date) {
+                            setState(() { _dateTime = date; });
+                          });
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              Container(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 5.0),
                   child: Center(
                     child: RaisedButton(
                       onPressed: () {},
@@ -129,11 +174,11 @@ class _ReadingsState extends State<Readings> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
-                padding: const EdgeInsets.all(25.0),
+                margin: const EdgeInsets.only(top: 30.0),
+                padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 4.0,
                     color: Colors.amberAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(20.0),
@@ -143,6 +188,7 @@ class _ReadingsState extends State<Readings> {
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
+                    fontWeight: FontWeight.bold,
                     color: Colors.red,
                   ),
                 ),
@@ -150,7 +196,7 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 40.0),
+                  padding: EdgeInsets.only(top: 30.0, bottom: 40.0),
                   child: Center(
                     child: RaisedButton(
                       onPressed: () {

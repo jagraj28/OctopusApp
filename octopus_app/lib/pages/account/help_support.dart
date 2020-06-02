@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class PastReadings extends StatefulWidget {
+class HelpSupport extends StatefulWidget {
   @override
-  _PastReadingsState createState() => new _PastReadingsState();
+  _HelpSupportState createState() => new _HelpSupportState();
 }
 
-// widget for PastReadings page
-class _PastReadingsState extends State<PastReadings> {
+// widget for HelpSupport page
+class _HelpSupportState extends State<HelpSupport> {
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class _PastReadingsState extends State<PastReadings> {
                   child: Padding(
                     padding: EdgeInsets.only(top: 80.0),
                     child: Text(
-                      'Past Readings',
+                      'Help and Support',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
                         fontSize: 30.0,
