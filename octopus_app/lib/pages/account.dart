@@ -75,7 +75,7 @@ class _AccountState extends State<Account> {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
-                    color: Colors.pink[400],
+                    color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
@@ -124,7 +124,7 @@ class _AccountState extends State<Account> {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
-                    color: Colors.pink[400],
+                    color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
@@ -173,7 +173,7 @@ class _AccountState extends State<Account> {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
-                    color: Colors.pink[400],
+                    color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),

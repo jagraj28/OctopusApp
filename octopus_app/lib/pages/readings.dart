@@ -41,7 +41,7 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 50.0),
+                  padding: EdgeInsets.only(top: 40.0),
                   child: Text(
                     'Electricity',
                     style: TextStyle(
@@ -55,14 +55,14 @@ class _ReadingsState extends State<Readings> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 20.0, left: 100.0, right: 100.0),
+                margin: const EdgeInsets.only(top: 15.0, left: 100.0, right: 100.0),
                 padding: const EdgeInsets.only(left: 15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 2.0,
                     color: Colors.white,
                   ),
-                  borderRadius: BorderRadius.circular(5.0),
+                  borderRadius: BorderRadius.circular(40.0),
                 ),
                 child: Center(
                   child: TextField(
@@ -97,14 +97,14 @@ class _ReadingsState extends State<Readings> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 20.0, left: 100.0, right: 100.0),
+                margin: const EdgeInsets.only(top: 15.0, left: 100.0, right: 100.0),
                 padding: const EdgeInsets.only(left: 15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 2.0,
                     color: Colors.white,
                   ),
-                  borderRadius: BorderRadius.circular(5.0),
+                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Center(
                   child: TextField(
@@ -124,13 +124,13 @@ class _ReadingsState extends State<Readings> {
               ),
 
               Container(
-                padding: EdgeInsets.only(top: 20.0),
+                padding: EdgeInsets.only(top: 10.0),
                 child: Center(
                   child: Column(
                     children: <Widget>[
                       RaisedButton(
                         child: Text(
-                          _dateTime == null ? 'Pick the date': DateFormat.yMMMMd('en_US').format(_dateTime),
+                          _dateTime == null ? 'Pick the date!': DateFormat.yMMMMd('en_US').format(_dateTime),
                           style: TextStyle(
                             fontFamily: 'Gotham',
                             fontSize: 20.0,
@@ -155,7 +155,7 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 5.0),
+                  padding: EdgeInsets.only(top: 20.0),
                   child: Center(
                     child: RaisedButton(
                       onPressed: () {},
@@ -178,10 +178,10 @@ class _ReadingsState extends State<Readings> {
                 padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 4.0,
+                    width: 3.0,
                     color: Colors.amberAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Text(
                   'Please don\'t submit any red\n    digits from your meter!',

@@ -69,7 +69,7 @@ class _LoginState extends State<Login> {
                   width: 2.0,
                   color: Colors.white,
                 ),
-                borderRadius: BorderRadius.circular(5.0),
+                borderRadius: BorderRadius.circular(40.0),
               ),
               child: Center(
                 child: TextField(
@@ -113,7 +113,7 @@ class _LoginState extends State<Login> {
                   width: 2.0,
                   color: Colors.white,
                 ),
-                borderRadius: BorderRadius.circular(5.0),
+                borderRadius: BorderRadius.circular(40.0),
               ),
               child: Center(
                 child: TextField(

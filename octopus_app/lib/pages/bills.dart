@@ -55,9 +55,9 @@ class _BillsState extends State<Bills> {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
-                    color: Colors.pink[400],
+                    color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(40.0),
                 ),
                 child: Text(
                   '£68.36',
@@ -104,9 +104,9 @@ class _BillsState extends State<Bills> {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
-                    color: Colors.pink[400],
+                    color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(40.0),
                 ),
                 child: Text(
                   '5th of every month',
@@ -153,9 +153,9 @@ class _BillsState extends State<Bills> {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 3.0,
-                    color: Colors.pink[400],
+                    color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(40.0),
                 ),
                 child: Text(
                   'Direct Debit',

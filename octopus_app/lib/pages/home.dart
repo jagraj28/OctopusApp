@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
                       width: 3.0,
                       color: Colors.lightBlueAccent,
                     ),
-                    borderRadius: BorderRadius.circular(20.0),
+                    borderRadius: BorderRadius.circular(40.0),
                   ),
                   child: Text(
                     '£76.89',
@@ -76,9 +76,9 @@ class _HomeState extends State<Home> {
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 3.0,
-                      color: Colors.pink[400],
+                      color: Colors.pinkAccent[400],
                     ),
-                    borderRadius: BorderRadius.circular(20.0),
+                    borderRadius: BorderRadius.circular(40.0),
                   ),
                   child: Text(
                     'Octopus 12M Fixed',
@@ -96,9 +96,9 @@ class _HomeState extends State<Home> {
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 3.0,
-                      color: Colors.pink[400],
+                      color: Colors.pinkAccent[400],
                     ),
-                    borderRadius: BorderRadius.circular(20.0),
+                    borderRadius: BorderRadius.circular(40.0),
                   ),
                   child: Text(
                     'Renewal Date: 03/03/2021',
@@ -123,7 +123,7 @@ class _HomeState extends State<Home> {
                             width: 3.0,
                             color: Colors.lightGreenAccent[400],
                           ),
-                          borderRadius: BorderRadius.circular(10.0),
+                          borderRadius: BorderRadius.circular(20.0),
                         ),
                         child: Text(
                           ' Electricity:\n\n16.36p/kWh\n21.43p/day',
@@ -143,7 +143,7 @@ class _HomeState extends State<Home> {
                             width: 3.0,
                             color: Colors.amberAccent[400],
                           ),
-                          borderRadius: BorderRadius.circular(10.0),
+                          borderRadius: BorderRadius.circular(20.0),
                         ),
                         child: Text(
                           '     Gas:\n\n3.86p/kWh\n16.84p/day',
@@ -191,7 +191,7 @@ class _HomeState extends State<Home> {
                     width: 3.0,
                     color: Colors.lightBlueAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(40.0),
                 ),
                 child: Text(
                   'share.octopus.energy/panda-oscar-123',
