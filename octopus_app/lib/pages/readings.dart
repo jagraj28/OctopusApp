@@ -129,24 +129,24 @@ class _ReadingsState extends State<Readings> {
                   child: Column(
                     children: <Widget>[
                       RaisedButton(
-                        child: Text(
-                          _dateTime == null ? 'Pick the date!': DateFormat.yMMMMd('en_US').format(_dateTime),
+                        onPressed: () {
+                          showDatePicker(
+                            context: context, 
+                            initialDate: DateTime.now(), 
+                            firstDate: DateTime(2019), 
+                            lastDate: DateTime.now(),
+                          ).then((date) {
+                            setState(() { _dateTime = date; });
+                          });
+                        },
+                      child: Text(
+                          _dateTime == null ? 'Select the date!': DateFormat.yMMMMd('en_US').format(_dateTime),
                           style: TextStyle(
                             fontFamily: 'Gotham',
                             fontSize: 20.0,
                             color: Colors.black,
                           ),
                         ),
-                        onPressed: () {
-                          showDatePicker(
-                            context: context, 
-                            initialDate: DateTime.now(), 
-                            firstDate: DateTime(2018), 
-                            lastDate: DateTime.now(),
-                          ).then((date) {
-                            setState(() { _dateTime = date; });
-                          });
-                        },
                       ),
                     ],
                   ),
