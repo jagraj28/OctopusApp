@@ -72,7 +72,9 @@ class _BillsState extends State<Bills> {
               Container(
                 child: Center(
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/edit_amount');
+                    },
                     color: Colors.green[400],
                     child: Text(
                       'Edit',
@@ -121,7 +123,9 @@ class _BillsState extends State<Bills> {
               Container(
                 child: Center(
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/edit_date');
+                    },
                     color: Colors.green[400],
                     child: Text(
                       'Edit',
@@ -170,7 +174,9 @@ class _BillsState extends State<Bills> {
               Container(
                 child: Center(
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/edit_type');
+                    },
                     color: Colors.green[400],
                     child: Text(
                       'Edit',

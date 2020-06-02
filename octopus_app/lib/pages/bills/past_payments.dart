@@ -68,6 +68,38 @@ class _PastPaymentsState extends State<PastPayments> {
                 ),
               ),
 
+              Container(
+                margin: const EdgeInsets.only(top: 200.0),
+                child: Text(
+                    'Think something\'s wrong?',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.white,
+                    ),
+                  ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 3.0,
+                    color: Colors.pinkAccent[400],
+                  ),
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                child: Text(
+                  'Get in touch with us!',
+                  style: TextStyle(
+                    fontSize: 15.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+
             ],
           ),
         ),

@@ -38,7 +38,7 @@ class _AccountState extends State<Account> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 30.0),
+                margin: const EdgeInsets.only(top: 25.0),
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                     border: Border.all(
@@ -58,7 +58,7 @@ class _AccountState extends State<Account> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
+                margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
                     'Name:',
                     style: TextStyle(
@@ -92,7 +92,9 @@ class _AccountState extends State<Account> {
               Container(
                 child: Center(
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/edit_name');
+                    },
                     color: Colors.green[400],
                     child: Text(
                       'Edit',
@@ -107,7 +109,7 @@ class _AccountState extends State<Account> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
+                margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
                     'Address:',
                     style: TextStyle(
@@ -139,24 +141,19 @@ class _AccountState extends State<Account> {
               ),
 
               Container(
-                child: Center(
-                  child: RaisedButton(
-                    onPressed: () {},
-                    color: Colors.green[400],
-                    child: Text(
-                      'Edit',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 15.0,
-                        fontFamily: 'Gotham',
-                      ),
+                margin: const EdgeInsets.only(top: 10.0),
+                child: Text(
+                    'Moving out? Get in touch with us!',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.blueGrey[300],
                     ),
                   ),
-                ),
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
+                margin: const EdgeInsets.only(top: 35.0),
                 child: Text(
                     'Contact Number:',
                     style: TextStyle(
@@ -190,7 +187,9 @@ class _AccountState extends State<Account> {
               Container(
                 child: Center(
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/edit_contact');
+                    },
                     color: Colors.green[400],
                     child: Text(
                       'Edit',
@@ -206,7 +205,7 @@ class _AccountState extends State<Account> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 30.0),
+                  padding: EdgeInsets.only(top: 20.0),
                   child: Center(
                     child: RaisedButton(
                       onPressed: () {
@@ -228,7 +227,7 @@ class _AccountState extends State<Account> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(bottom: 40.0),
+                  padding: EdgeInsets.only(bottom: 30.0),
                   child: Center(
                     child: RaisedButton(
                       onPressed: () {

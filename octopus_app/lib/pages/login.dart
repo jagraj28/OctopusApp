@@ -62,7 +62,7 @@ class _LoginState extends State<Login> {
 
             // space to enter email
             Container(
-              margin: const EdgeInsets.only(top: 15.0, left: 50.0, right: 50.0),
+              margin: const EdgeInsets.only(top: 12.0, left: 50.0, right: 50.0),
               padding: const EdgeInsets.only(left: 15.0),
               decoration: BoxDecoration(
                 border: Border.all(
@@ -106,7 +106,7 @@ class _LoginState extends State<Login> {
 
             /// space to enter password
             Container(
-              margin: const EdgeInsets.only(top: 15.0, left: 50.0, right: 50.0),
+              margin: const EdgeInsets.only(top: 12.0, left: 50.0, right: 50.0),
               padding: const EdgeInsets.only(left: 15.0),
               decoration: BoxDecoration(
                 border: Border.all(
