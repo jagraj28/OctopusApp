@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:octopus_app/pages/navigation.dart';
 
-class EditContact extends StatefulWidget {
+class ConfirmReadings extends StatefulWidget {
   @override
-  _EditContactState createState() => new _EditContactState();
+  _ConfirmReadingsState createState() => new _ConfirmReadingsState();
 }
 
-// widget for EditContact page
-class _EditContactState extends State<EditContact> {
+// widget for ConfirmReadings page
+class _ConfirmReadingsState extends State<ConfirmReadings> {
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class _EditContactState extends State<EditContact> {
                   child: Padding(
                     padding: EdgeInsets.only(top: 80.0),
                     child: Text(
-                      'Edit',
+                      'Confirm',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
                         fontSize: 30.0,

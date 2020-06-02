@@ -214,7 +214,7 @@ class _BillsState extends State<Bills> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 20.0),
+                  padding: EdgeInsets.only(top: 10.0),
                   child: Center(
                     child: RaisedButton(
                       onPressed: () {

@@ -6,6 +6,7 @@ import 'package:octopus_app/pages/bills.dart';
 import 'package:octopus_app/pages/account.dart';
 import 'package:octopus_app/pages/navigation.dart';
 import 'package:octopus_app/pages/readings/past_readings.dart';
+import 'package:octopus_app/pages/readings/confirm_readings.dart';
 import 'package:octopus_app/pages/bills/payment.dart';
 import 'package:octopus_app/pages/bills/past_payments.dart';
 import 'package:octopus_app/pages/bills/edit_amount.dart';
@@ -26,6 +27,7 @@ void main() => runApp(MaterialApp(
 
     '/readings': (context) => Readings(),
     '/past_readings': (context) => PastReadings(),
+    '/confirm_readings': (context) => ConfirmReadings(),
 
     '/bills': (context) => Bills(),
     '/edit_amount': (context) => EditAmount(),

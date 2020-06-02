@@ -36,6 +36,29 @@ class _EditNameState extends State<EditName> {
                   ),
                 ),
               ),
+
+              Container(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 20.0),
+                  child: Center(
+                    child: RaisedButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      color: Colors.greenAccent[400],
+                      child: Text(
+                        'Confirm',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
+                          fontFamily: 'Gotham',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
             ],
           ),
         ),

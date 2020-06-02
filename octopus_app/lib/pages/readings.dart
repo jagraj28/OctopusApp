@@ -158,10 +158,12 @@ class _ReadingsState extends State<Readings> {
                   padding: EdgeInsets.only(top: 20.0),
                   child: Center(
                     child: RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/confirm_readings');
+                      },
                       color: Colors.greenAccent[400],
                       child: Text(
-                        'Submit',
+                        'Confirm',
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 20.0,
