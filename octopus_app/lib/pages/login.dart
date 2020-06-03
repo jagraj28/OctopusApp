@@ -72,7 +72,7 @@ class _LoginState extends State<Login> {
                 borderRadius: BorderRadius.circular(40.0),
               ),
               child: Center(
-                child: TextFormField(
+                child: TextField(
                   keyboardType: TextInputType.emailAddress,
                   style: TextStyle(
                     color: Colors.white,
@@ -80,6 +80,7 @@ class _LoginState extends State<Login> {
                     fontFamily: 'Gotham',
                   ),
                   decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.email, color: Colors.white),
                     hintText: 'Email',
                     hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
@@ -117,7 +118,7 @@ class _LoginState extends State<Login> {
                 borderRadius: BorderRadius.circular(40.0),
               ),
               child: Center(
-                child: TextFormField(
+                child: TextField(
                   obscureText: true,
                   autocorrect: false,
                   keyboardType: TextInputType.visiblePassword,
@@ -127,6 +128,7 @@ class _LoginState extends State<Login> {
                     fontFamily: 'Gotham',
                   ),
                   decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.lock, color: Colors.white),
                     hintText: 'Password',
                     hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
