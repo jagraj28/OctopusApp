@@ -10,7 +10,7 @@ import 'package:octopus_app/pages/readings/confirm_readings.dart';
 import 'package:octopus_app/pages/bills/payment.dart';
 import 'package:octopus_app/pages/bills/past_payments.dart';
 import 'package:octopus_app/pages/bills/edit_amount.dart';
-import 'package:octopus_app/pages/bills/edit_date.dart';
+import 'package:octopus_app/pages/bills/edit_schedule.dart';
 import 'package:octopus_app/pages/bills/edit_type.dart';
 import 'package:octopus_app/pages/account/edit_name.dart';
 import 'package:octopus_app/pages/account/edit_contact.dart';
@@ -31,7 +31,7 @@ void main() => runApp(MaterialApp(
 
     '/bills': (context) => Bills(),
     '/edit_amount': (context) => EditAmount(),
-    '/edit_date': (context) => EditDate(),
+    '/edit_date': (context) => EditSchedule(),
     '/edit_type': (context) => EditType(),
     '/payment': (context) => Payment(),
     '/past_payments': (context) => PastPayments(),

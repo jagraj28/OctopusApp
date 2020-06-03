@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class EditDate extends StatefulWidget {
+class EditSchedule extends StatefulWidget {
   @override
-  _EditDateState createState() => new _EditDateState();
+  _EditScheduleState createState() => new _EditScheduleState();
 }
 
-// widget for EditDate page
-class _EditDateState extends State<EditDate> {
+// widget for EditSchedule page
+class _EditScheduleState extends State<EditSchedule> {
 
   String dropDownStr = "1";
 
@@ -123,7 +123,6 @@ class _EditDateState extends State<EditDate> {
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
                     color: Colors.redAccent[400],
-                    fontWeight: FontWeight.bold
                   ),
                 ),
               ),

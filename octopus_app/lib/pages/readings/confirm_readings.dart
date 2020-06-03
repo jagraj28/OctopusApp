@@ -60,7 +60,7 @@ class _ConfirmReadingsState extends State<ConfirmReadings> {
                   borderRadius: BorderRadius.circular(5.0),
                 ),
                 child: Text(
-                  'Electric:',
+                  'Electric = ',
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
@@ -80,7 +80,7 @@ class _ConfirmReadingsState extends State<ConfirmReadings> {
                   borderRadius: BorderRadius.circular(5.0),
                 ),
                 child: Text(
-                  'Gas:',
+                  'Gas = ',
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
@@ -120,7 +120,7 @@ class _ConfirmReadingsState extends State<ConfirmReadings> {
                       icon: Icon(Icons.check),
                       color: Colors.greenAccent[400],
                       label: Text(
-                        'Confirm',
+                        'Submit',
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 20.0,

@@ -81,7 +81,7 @@ class _LoginState extends State<Login> {
                   ),
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.email, color: Colors.white),
-                    hintText: 'Email',
+                    hintText: 'Enter your email',
                     hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                     contentPadding: EdgeInsets.only(top: 15.0),
@@ -130,7 +130,7 @@ class _LoginState extends State<Login> {
                   ),
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.lock, color: Colors.white),
-                    hintText: 'Password',
+                    hintText: 'Enter your password',
                     hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                     contentPadding: EdgeInsets.only(top: 15.0),

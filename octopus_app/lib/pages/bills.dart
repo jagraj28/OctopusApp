@@ -92,7 +92,7 @@ class _BillsState extends State<Bills> {
               Container(
                 margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
-                    'Date:',
+                    'Schedule:',
                     style: TextStyle(
                       fontSize: 25.0,
                       fontFamily: 'Gotham',

@@ -38,7 +38,7 @@ class _AccountState extends State<Account> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 25.0),
+                margin: const EdgeInsets.only(top: 20.0),
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                     border: Border.all(
@@ -154,7 +154,7 @@ class _AccountState extends State<Account> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 35.0),
+                margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
                     'Contact Number:',
                     style: TextStyle(
@@ -230,7 +230,7 @@ class _AccountState extends State<Account> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(bottom: 30.0),
+                  padding: EdgeInsets.only(bottom: 20.0),
                   child: Center(
                     child: RaisedButton.icon(
                       onPressed: () {

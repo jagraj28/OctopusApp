@@ -82,7 +82,7 @@ class _EditAmountState extends State<EditAmount> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 15.0, left: 100.0, right: 100.0),
+                margin: const EdgeInsets.only(top: 15.0, left: 150.0, right: 155.0),
                 padding: const EdgeInsets.only(left: 15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
@@ -116,7 +116,6 @@ class _EditAmountState extends State<EditAmount> {
                       fontSize: 20.0,
                       fontFamily: 'Gotham',
                       color: Colors.redAccent[400],
-                      fontWeight: FontWeight.bold
                     ),
                   ),
               ),
