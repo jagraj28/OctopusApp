@@ -54,7 +54,7 @@ class _BillsState extends State<Bills> {
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(50.0),
@@ -106,7 +106,7 @@ class _BillsState extends State<Bills> {
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(50.0),
@@ -158,7 +158,7 @@ class _BillsState extends State<Bills> {
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(50.0),

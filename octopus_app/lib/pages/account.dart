@@ -42,7 +42,7 @@ class _AccountState extends State<Account> {
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                     border: Border.all(
-                      width: 3.0,
+                      width: 2.0,
                       color: Colors.lightBlueAccent,
                     ),
                     borderRadius: BorderRadius.circular(10.0),
@@ -74,7 +74,7 @@ class _AccountState extends State<Account> {
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(50.0),
@@ -126,7 +126,7 @@ class _AccountState extends State<Account> {
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(20.0),
@@ -170,7 +170,7 @@ class _AccountState extends State<Account> {
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(50.0),

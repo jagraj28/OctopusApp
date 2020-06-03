@@ -54,7 +54,7 @@ class _ConfirmReadingsState extends State<ConfirmReadings> {
                 padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(5.0),
@@ -74,7 +74,7 @@ class _ConfirmReadingsState extends State<ConfirmReadings> {
                 padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(5.0),
@@ -94,7 +94,7 @@ class _ConfirmReadingsState extends State<ConfirmReadings> {
                 padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 4.0,
+                    width: 3.0,
                     color: Colors.amberAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(10.0),

@@ -128,7 +128,7 @@ class _ReadingsState extends State<Readings> {
                 child: Center(
                   child: ButtonTheme(
                     height: 40.0,
-                    buttonColor: Colors.grey,
+                    buttonColor: Colors.lightBlueAccent[400],
                     child: RaisedButton.icon(
                       onPressed: () {
                         showDatePicker(

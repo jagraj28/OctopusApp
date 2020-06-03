@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
                     border: Border.all(
-                      width: 3.0,
+                      width: 2.0,
                       color: Colors.lightBlueAccent,
                     ),
                     borderRadius: BorderRadius.circular(10.0),
@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
                     border: Border.all(
-                      width: 3.0,
+                      width: 2.0,
                       color: Colors.pinkAccent[400],
                     ),
                     borderRadius: BorderRadius.circular(40.0),
@@ -95,7 +95,7 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
                     border: Border.all(
-                      width: 3.0,
+                      width: 2.0,
                       color: Colors.pinkAccent[400],
                     ),
                     borderRadius: BorderRadius.circular(40.0),
@@ -120,7 +120,7 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.all(25.0),
                         decoration: BoxDecoration(
                           border: Border.all(
-                            width: 3.0,
+                            width: 2.0,
                             color: Colors.lightGreenAccent[400],
                           ),
                           borderRadius: BorderRadius.circular(20.0),
@@ -140,7 +140,7 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.all(25.0),
                         decoration: BoxDecoration(
                           border: Border.all(
-                            width: 3.0,
+                            width: 2.0,
                             color: Colors.amberAccent[400],
                           ),
                           borderRadius: BorderRadius.circular(20.0),
@@ -188,7 +188,7 @@ class _HomeState extends State<Home> {
                 padding: const EdgeInsets.all(15.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 2.0,
                     color: Colors.lightBlueAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(40.0),
