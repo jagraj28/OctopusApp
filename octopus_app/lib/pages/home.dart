@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
                       width: 3.0,
                       color: Colors.lightBlueAccent,
                     ),
-                    borderRadius: BorderRadius.circular(40.0),
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: Text(
                     '£76.89',
@@ -126,7 +126,7 @@ class _HomeState extends State<Home> {
                           borderRadius: BorderRadius.circular(20.0),
                         ),
                         child: Text(
-                          ' Electricity:\n\n16.36p/kWh\n21.43p/day',
+                          '   Electric:\n\n16.36p/kWh\n21.43p/day',
                           style: TextStyle(
                             fontSize: 20.0,
                             fontFamily: 'Gotham',

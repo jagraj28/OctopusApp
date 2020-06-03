@@ -45,7 +45,7 @@ class _AccountState extends State<Account> {
                       width: 3.0,
                       color: Colors.lightBlueAccent,
                     ),
-                    borderRadius: BorderRadius.circular(20.0),
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
                 child: Text(
                   'A-123456789',
@@ -77,7 +77,7 @@ class _AccountState extends State<Account> {
                     width: 3.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   'Jagraj Singh',
@@ -91,12 +91,13 @@ class _AccountState extends State<Account> {
 
               Container(
                 child: Center(
-                  child: RaisedButton(
+                  child: RaisedButton.icon(
                     onPressed: () {
                       Navigator.pushNamed(context, '/edit_name');
                     },
+                    icon: Icon(Icons.edit),
                     color: Colors.green[400],
-                    child: Text(
+                    label: Text(
                       'Edit',
                       style: TextStyle(
                         color: Colors.black,
@@ -172,7 +173,7 @@ class _AccountState extends State<Account> {
                     width: 3.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   '07777777777',
@@ -186,12 +187,13 @@ class _AccountState extends State<Account> {
 
               Container(
                 child: Center(
-                  child: RaisedButton(
+                  child: RaisedButton.icon(
                     onPressed: () {
                       Navigator.pushNamed(context, '/edit_contact');
                     },
+                    icon: Icon(Icons.edit),
                     color: Colors.green[400],
-                    child: Text(
+                    label: Text(
                       'Edit',
                       style: TextStyle(
                         color: Colors.black,
@@ -207,12 +209,13 @@ class _AccountState extends State<Account> {
                 child: Padding(
                   padding: EdgeInsets.only(top: 20.0),
                   child: Center(
-                    child: RaisedButton(
+                    child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/faq');
                       },
+                      icon: Icon(Icons.info),
                       color: Colors.amberAccent[400],
-                      child: Text(
+                      label: Text(
                         'FAQ\'s',
                         style: TextStyle(
                           color: Colors.black,
@@ -229,12 +232,13 @@ class _AccountState extends State<Account> {
                 child: Padding(
                   padding: EdgeInsets.only(bottom: 30.0),
                   child: Center(
-                    child: RaisedButton(
+                    child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/help_support');
                       },
+                      icon: Icon(Icons.help),
                       color: Colors.amberAccent[400],
-                      child: Text(
+                      label: Text(
                         'Help and Support',
                         style: TextStyle(
                           color: Colors.black,

@@ -57,7 +57,7 @@ class _BillsState extends State<Bills> {
                     width: 3.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(40.0),
+                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   '£68.36',
@@ -71,12 +71,13 @@ class _BillsState extends State<Bills> {
 
               Container(
                 child: Center(
-                  child: RaisedButton(
+                  child: RaisedButton.icon(
                     onPressed: () {
                       Navigator.pushNamed(context, '/edit_amount');
                     },
+                    icon: Icon(Icons.edit),
                     color: Colors.green[400],
-                    child: Text(
+                    label: Text(
                       'Edit',
                       style: TextStyle(
                         color: Colors.black,
@@ -108,7 +109,7 @@ class _BillsState extends State<Bills> {
                     width: 3.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(40.0),
+                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   '5th of every month',
@@ -122,12 +123,13 @@ class _BillsState extends State<Bills> {
 
               Container(
                 child: Center(
-                  child: RaisedButton(
+                  child: RaisedButton.icon(
                     onPressed: () {
                       Navigator.pushNamed(context, '/edit_date');
                     },
+                    icon: Icon(Icons.edit),
                     color: Colors.green[400],
-                    child: Text(
+                    label: Text(
                       'Edit',
                       style: TextStyle(
                         color: Colors.black,
@@ -159,7 +161,7 @@ class _BillsState extends State<Bills> {
                     width: 3.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(40.0),
+                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   'Direct Debit',
@@ -173,12 +175,13 @@ class _BillsState extends State<Bills> {
 
               Container(
                 child: Center(
-                  child: RaisedButton(
+                  child: RaisedButton.icon(
                     onPressed: () {
                       Navigator.pushNamed(context, '/edit_type');
                     },
+                    icon: Icon(Icons.edit),
                     color: Colors.green[400],
-                    child: Text(
+                    label: Text(
                       'Edit',
                       style: TextStyle(
                         color: Colors.black,
@@ -194,12 +197,13 @@ class _BillsState extends State<Bills> {
                 child: Padding(
                   padding: EdgeInsets.only(top: 30.0),
                   child: Center(
-                    child: RaisedButton(
+                    child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/payment');
                       },
+                      icon: Icon(Icons.payment),
                       color: Colors.amberAccent[400],
-                      child: Text(
+                      label: Text(
                         'Make a one-off payment?',
                         style: TextStyle(
                           color: Colors.black,
@@ -214,14 +218,15 @@ class _BillsState extends State<Bills> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 10.0),
+                  padding: EdgeInsets.only(top: 80.0),
                   child: Center(
-                    child: RaisedButton(
+                    child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/past_payments');
                       },
+                      icon: Icon(Icons.remove_red_eye),
                       color: Colors.amberAccent[400],
-                      child: Text(
+                      label: Text(
                         'View Past Payments',
                         style: TextStyle(
                           color: Colors.black,

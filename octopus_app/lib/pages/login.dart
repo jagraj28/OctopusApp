@@ -72,7 +72,8 @@ class _LoginState extends State<Login> {
                 borderRadius: BorderRadius.circular(40.0),
               ),
               child: Center(
-                child: TextField(
+                child: TextFormField(
+                  keyboardType: TextInputType.emailAddress,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20.0,
@@ -116,7 +117,10 @@ class _LoginState extends State<Login> {
                 borderRadius: BorderRadius.circular(40.0),
               ),
               child: Center(
-                child: TextField(
+                child: TextFormField(
+                  obscureText: true,
+                  autocorrect: false,
+                  keyboardType: TextInputType.visiblePassword,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20.0,

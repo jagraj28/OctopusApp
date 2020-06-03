@@ -38,15 +38,68 @@ class _PaymentState extends State<Payment> {
               ),
 
               Container(
+                margin: const EdgeInsets.only(top: 40.0),
+                child: Text(
+                    'Amount:',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.white,
+                    ),
+                  ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 15.0, left: 100.0, right: 100.0),
+                padding: const EdgeInsets.only(left: 15.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 2.0,
+                    color: Colors.white,
+                  ),
+                  borderRadius: BorderRadius.circular(50.0),
+                ),
+                child: Center(
+                  child: TextField(
+                    keyboardType: TextInputType.number,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontFamily: 'Gotham',
+                    ),
+                    decoration: InputDecoration(
+                      hintText: 'Amount',
+                      hintStyle: TextStyle(color: Colors.grey),
+                      border: InputBorder.none,
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 40.0),
+                child: Text(
+                  'Are you sure about this?',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.redAccent[400],
+                    fontWeight: FontWeight.bold
+                  ),
+                ),
+              ),
+
+              Container(
                 child: Padding(
                   padding: EdgeInsets.only(top: 20.0),
                   child: Center(
-                    child: RaisedButton(
+                    child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pop(context);
                       },
+                      icon: Icon(Icons.check),
                       color: Colors.greenAccent[400],
-                      child: Text(
+                      label: Text(
                         'Confirm',
                         style: TextStyle(
                           color: Colors.black,

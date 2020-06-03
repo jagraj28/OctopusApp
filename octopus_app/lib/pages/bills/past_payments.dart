@@ -10,11 +10,11 @@ class PastPayments extends StatefulWidget {
 class _PastPaymentsState extends State<PastPayments> {
 
   final List payments = [
-    Colors.red,
-    Colors.orange,
-    Colors.yellow,
-    Colors.green,
-    Colors.blue
+    Colors.purple[800],
+    Colors.purple[800],
+    Colors.purple[800],
+    Colors.purple[800],
+    Colors.purple[800],
   ];
 
   @override
@@ -58,7 +58,7 @@ class _PastPaymentsState extends State<PastPayments> {
                           margin: EdgeInsets.symmetric(horizontal: 25.0),
                           decoration: BoxDecoration(
                             color: i,
-                            borderRadius: BorderRadius.circular(20.0)
+                            borderRadius: BorderRadius.circular(40.0)
                           ),
                         );
                       });

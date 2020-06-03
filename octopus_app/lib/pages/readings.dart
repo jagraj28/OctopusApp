@@ -43,7 +43,7 @@ class _ReadingsState extends State<Readings> {
                 child: Padding(
                   padding: EdgeInsets.only(top: 40.0),
                   child: Text(
-                    'Electricity',
+                    'Electric',
                     style: TextStyle(
                       decoration: TextDecoration.underline,
                       fontSize: 25.0,
@@ -128,7 +128,7 @@ class _ReadingsState extends State<Readings> {
                 child: Center(
                   child: Column(
                     children: <Widget>[
-                      RaisedButton(
+                      RaisedButton.icon(
                         onPressed: () {
                           showDatePicker(
                             context: context, 
@@ -139,7 +139,8 @@ class _ReadingsState extends State<Readings> {
                             setState(() { _dateTime = date; });
                           });
                         },
-                      child: Text(
+                        icon: Icon(Icons.date_range),
+                        label: Text(
                           _dateTime == null ? 'Select the date!': DateFormat.yMMMMd('en_US').format(_dateTime),
                           style: TextStyle(
                             fontFamily: 'Gotham',
@@ -157,12 +158,13 @@ class _ReadingsState extends State<Readings> {
                 child: Padding(
                   padding: EdgeInsets.only(top: 20.0),
                   child: Center(
-                    child: RaisedButton(
+                    child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/confirm_readings');
                       },
+                      icon: Icon(Icons.check),
                       color: Colors.greenAccent[400],
-                      child: Text(
+                      label: Text(
                         'Confirm',
                         style: TextStyle(
                           color: Colors.black,
@@ -180,7 +182,7 @@ class _ReadingsState extends State<Readings> {
                 padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    width: 3.0,
+                    width: 4.0,
                     color: Colors.amberAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(10.0),
@@ -190,22 +192,22 @@ class _ReadingsState extends State<Readings> {
                   style: TextStyle(
                     fontSize: 20.0,
                     fontFamily: 'Gotham',
-                    fontWeight: FontWeight.bold,
-                    color: Colors.red,
+                    color: Colors.redAccent[400],
                   ),
                 ),
               ),
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 30.0, bottom: 40.0),
+                  padding: EdgeInsets.only(top: 165.0),
                   child: Center(
-                    child: RaisedButton(
+                    child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/past_readings');
                       },
+                      icon: Icon(Icons.remove_red_eye),
                       color: Colors.amberAccent[400],
-                      child: Text(
+                      label: Text(
                         'View Past Readings',
                         style: TextStyle(
                           color: Colors.black,

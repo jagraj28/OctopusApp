@@ -10,11 +10,11 @@ class PastReadings extends StatefulWidget {
 class _PastReadingsState extends State<PastReadings> {
 
   final List payments = [
-    Colors.red,
-    Colors.orange,
-    Colors.yellow,
-    Colors.green,
-    Colors.blue
+    Colors.purple[800],
+    Colors.purple[800],
+    Colors.purple[800],
+    Colors.purple[800],
+    Colors.purple[800],
   ];
 
   @override
@@ -55,10 +55,10 @@ class _PastReadingsState extends State<PastReadings> {
                       return Builder(builder: (BuildContext context) {
                         return Container(
                           width: MediaQuery.of(context).size.width,
-                          margin: EdgeInsets.symmetric(horizontal: 25.0),
+                          margin: EdgeInsets.symmetric(horizontal: 20.0),
                           decoration: BoxDecoration(
                             color: i,
-                            borderRadius: BorderRadius.circular(20.0)
+                            borderRadius: BorderRadius.circular(40.0)
                           ),
                         );
                       });

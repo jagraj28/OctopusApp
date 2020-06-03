@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:octopus_app/pages/navigation.dart';
 
 class ConfirmReadings extends StatefulWidget {
   @override
@@ -39,15 +38,88 @@ class _ConfirmReadingsState extends State<ConfirmReadings> {
               ),
 
               Container(
+                margin: const EdgeInsets.only(top: 40.0),
+                child: Text(
+                    'Are you sure you wish to submit\n       the following readings?',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.white,
+                    ),
+                  ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 30.0),
+                padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 3.0,
+                    color: Colors.pinkAccent[400],
+                  ),
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+                child: Text(
+                  'Electric:',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 3.0,
+                    color: Colors.pinkAccent[400],
+                  ),
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+                child: Text(
+                  'Gas:',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 30.0),
+                padding: const EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 4.0,
+                    color: Colors.amberAccent[400],
+                  ),
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                child: Text(
+                  'Ensure there aren\'t any red\n    digits in your readings!',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.redAccent[400],
+                  ),
+                ),
+              ),
+
+              Container(
                 child: Padding(
                   padding: EdgeInsets.only(top: 20.0),
                   child: Center(
-                    child: RaisedButton(
+                    child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pop(context);
                       },
+                      icon: Icon(Icons.check),
                       color: Colors.greenAccent[400],
-                      child: Text(
+                      label: Text(
                         'Confirm',
                         style: TextStyle(
                           color: Colors.black,
