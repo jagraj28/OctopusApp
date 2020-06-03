@@ -122,24 +122,58 @@ class _EditContactState extends State<EditContact> {
               ),
 
               Container(
-                child: Padding(
-                  padding: EdgeInsets.only(top: 20.0),
-                  child: Center(
-                    child: RaisedButton.icon(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      icon: Icon(Icons.check),
-                      color: Colors.greenAccent[400],
-                      label: Text(
-                        'Confirm',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20.0,
-                          fontFamily: 'Gotham',
+                child: Center(
+                  child: Row(
+                    children: <Widget>[
+
+                      Container(
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 70.0, top: 20.0),
+                          child: ButtonTheme(
+                            height: 40.0,
+                            child: RaisedButton.icon(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              icon: Icon(Icons.cancel),
+                              color: Colors.redAccent[400],
+                              label: Text(
+                                'Cancel',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20.0,
+                                  fontFamily: 'Gotham',
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
+                  
+                      Container(
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 20.0, top: 20.0),
+                          child: ButtonTheme(
+                            height: 40.0,
+                            child: RaisedButton.icon(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              icon: Icon(Icons.check_circle),
+                              color: Colors.greenAccent[400],
+                              label: Text(
+                                'Confirm',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20.0,
+                                  fontFamily: 'Gotham',
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
