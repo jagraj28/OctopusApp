@@ -92,7 +92,8 @@ class _PaymentState extends State<Payment> {
               Container(
                 child: Padding(
                   padding: EdgeInsets.only(top: 20.0),
-                  child: Center(
+                  child: ButtonTheme(
+                    height: 40.0,
                     child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pop(context);

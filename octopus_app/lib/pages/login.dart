@@ -43,14 +43,14 @@ class _LoginState extends State<Login> {
               ),
             ),
           
-            // email address
             Container(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 80.0),
+                  padding: EdgeInsets.only(top: 100.0),
                   child: Text(
-                    'Email Address',
+                    'Login',
                     style: TextStyle(
+                      decoration: TextDecoration.underline,
                       fontSize: 25.0,
                       color: Colors.white,
                       fontFamily: 'Gotham',
@@ -62,7 +62,7 @@ class _LoginState extends State<Login> {
 
             // space to enter email
             Container(
-              margin: const EdgeInsets.only(top: 12.0, left: 50.0, right: 50.0),
+              margin: const EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
               padding: const EdgeInsets.only(left: 15.0),
               decoration: BoxDecoration(
                 border: Border.all(
@@ -81,7 +81,7 @@ class _LoginState extends State<Login> {
                   ),
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.email, color: Colors.white),
-                    hintText: 'Enter your email',
+                    hintText: 'Email',
                     hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                     contentPadding: EdgeInsets.only(top: 15.0),
@@ -90,26 +90,9 @@ class _LoginState extends State<Login> {
               ),
             ),
 
-            // password
-            Container(
-              child: Center(
-                child: Padding(
-                  padding: EdgeInsets.only(top: 30.0),
-                  child: Text(
-                    'Password',
-                    style: TextStyle(
-                      fontSize: 25.0,
-                      color: Colors.white,
-                      fontFamily: 'Gotham',
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-
             /// space to enter password
             Container(
-              margin: const EdgeInsets.only(top: 12.0, left: 50.0, right: 50.0),
+              margin: const EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
               padding: const EdgeInsets.only(left: 15.0),
               decoration: BoxDecoration(
                 border: Border.all(
@@ -130,7 +113,7 @@ class _LoginState extends State<Login> {
                   ),
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.lock, color: Colors.white),
-                    hintText: 'Enter your password',
+                    hintText: 'Password',
                     hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                     contentPadding: EdgeInsets.only(top: 15.0),
@@ -159,8 +142,10 @@ class _LoginState extends State<Login> {
             // login button
             Container(
               child: Padding(
-                padding: EdgeInsets.only(top: 20.0),
-                child: Center(
+                padding: EdgeInsets.only(top: 30.0),
+                child: ButtonTheme(
+                  minWidth: 150.0,
+                  height: 40.0,
                   child: RaisedButton.icon(
                     onPressed: () {
                       Navigator.pushReplacementNamed(context, '/navigation');

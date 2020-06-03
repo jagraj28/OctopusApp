@@ -208,7 +208,8 @@ class _AccountState extends State<Account> {
               Container(
                 child: Padding(
                   padding: EdgeInsets.only(top: 20.0),
-                  child: Center(
+                  child: ButtonTheme(
+                    height: 40.0,
                     child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/faq');
@@ -231,7 +232,8 @@ class _AccountState extends State<Account> {
               Container(
                 child: Padding(
                   padding: EdgeInsets.only(bottom: 20.0),
-                  child: Center(
+                  child: ButtonTheme(
+                    height: 40.0,
                     child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/help_support');

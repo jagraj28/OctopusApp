@@ -196,7 +196,8 @@ class _BillsState extends State<Bills> {
               Container(
                 child: Padding(
                   padding: EdgeInsets.only(top: 30.0),
-                  child: Center(
+                  child: ButtonTheme(
+                    height: 40.0,
                     child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/payment');
@@ -219,7 +220,8 @@ class _BillsState extends State<Bills> {
               Container(
                 child: Padding(
                   padding: EdgeInsets.only(top: 80.0),
-                  child: Center(
+                  child: ButtonTheme(
+                    height: 40.0,
                     child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/past_payments');

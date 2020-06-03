@@ -126,30 +126,30 @@ class _ReadingsState extends State<Readings> {
               Container(
                 padding: EdgeInsets.only(top: 10.0),
                 child: Center(
-                  child: Column(
-                    children: <Widget>[
-                      RaisedButton.icon(
-                        onPressed: () {
-                          showDatePicker(
-                            context: context, 
-                            initialDate: DateTime.now(), 
-                            firstDate: DateTime(2019), 
-                            lastDate: DateTime.now(),
-                          ).then((date) {
-                            setState(() { _dateTime = date; });
-                          });
-                        },
-                        icon: Icon(Icons.date_range),
-                        label: Text(
-                          _dateTime == null ? 'Select the date!': DateFormat.yMMMMd('en_US').format(_dateTime),
-                          style: TextStyle(
-                            fontFamily: 'Gotham',
-                            fontSize: 20.0,
-                            color: Colors.black,
-                          ),
+                  child: ButtonTheme(
+                    height: 40.0,
+                    buttonColor: Colors.grey,
+                    child: RaisedButton.icon(
+                      onPressed: () {
+                        showDatePicker(
+                          context: context, 
+                          initialDate: DateTime.now(), 
+                          firstDate: DateTime(2019), 
+                          lastDate: DateTime.now(),
+                        ).then((date) {
+                          setState(() { _dateTime = date; });
+                        });
+                      },
+                      icon: Icon(Icons.date_range),
+                      label: Text(
+                        _dateTime == null ? 'Select the date!': DateFormat.yMMMMd('en_US').format(_dateTime),
+                        style: TextStyle(
+                          fontFamily: 'Gotham',
+                          fontSize: 20.0,
+                          color: Colors.black,
                         ),
                       ),
-                    ],
+                    ),
                   ),
                 ),
               ),
@@ -157,7 +157,8 @@ class _ReadingsState extends State<Readings> {
               Container(
                 child: Padding(
                   padding: EdgeInsets.only(top: 20.0),
-                  child: Center(
+                  child: ButtonTheme(
+                    height: 40.0,
                     child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/confirm_readings');
@@ -200,7 +201,8 @@ class _ReadingsState extends State<Readings> {
               Container(
                 child: Padding(
                   padding: EdgeInsets.only(top: 165.0),
-                  child: Center(
+                  child: ButtonTheme(
+                    height: 40.0,
                     child: RaisedButton.icon(
                       onPressed: () {
                         Navigator.pushNamed(context, '/past_readings');
