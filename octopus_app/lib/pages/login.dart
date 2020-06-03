@@ -157,12 +157,13 @@ class _LoginState extends State<Login> {
               child: Padding(
                 padding: EdgeInsets.only(top: 20.0),
                 child: Center(
-                  child: RaisedButton(
+                  child: RaisedButton.icon(
                     onPressed: () {
                       Navigator.pushReplacementNamed(context, '/navigation');
                     },
+                    icon: Icon(Icons.input),
                     color: Colors.greenAccent[400],
-                    child: Text(
+                    label: Text(
                       'Login',
                       style: TextStyle(
                         color: Colors.black,
