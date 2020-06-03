@@ -84,6 +84,7 @@ class _LoginState extends State<Login> {
                     hintText: 'Email',
                     hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
+                    contentPadding: EdgeInsets.only(top: 15.0),
                   ),
                 ),
               ),
@@ -93,7 +94,7 @@ class _LoginState extends State<Login> {
             Container(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 25.0),
+                  padding: EdgeInsets.only(top: 30.0),
                   child: Text(
                     'Password:',
                     style: TextStyle(
@@ -132,6 +133,7 @@ class _LoginState extends State<Login> {
                     hintText: 'Password',
                     hintStyle: TextStyle(color: Colors.grey),
                     border: InputBorder.none,
+                    contentPadding: EdgeInsets.only(top: 15.0),
                   ),
                 ),
               ),
@@ -141,7 +143,7 @@ class _LoginState extends State<Login> {
             Container(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 40.0),
+                  padding: EdgeInsets.only(top: 20.0),
                   child: Text(
                     'Forgot Password?',
                     style: TextStyle(
@@ -169,7 +171,7 @@ class _LoginState extends State<Login> {
                       'Login',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 25.0,
+                        fontSize: 22.0,
                         fontFamily: 'Gotham',
                       ),
                     ),
