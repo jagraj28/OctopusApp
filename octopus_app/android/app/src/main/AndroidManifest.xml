@@ -7,7 +7,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="Octopus Energy"
+        android:label="OE"
         android:icon="@mipmap/octopus">
         <activity
             android:name=".MainActivity"

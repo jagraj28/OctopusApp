@@ -49,7 +49,7 @@ class _LoginState extends State<Login> {
                 child: Padding(
                   padding: EdgeInsets.only(top: 80.0),
                   child: Text(
-                    'Email Address:',
+                    'Email Address',
                     style: TextStyle(
                       fontSize: 25.0,
                       color: Colors.white,
@@ -96,7 +96,7 @@ class _LoginState extends State<Login> {
                 child: Padding(
                   padding: EdgeInsets.only(top: 30.0),
                   child: Text(
-                    'Password:',
+                    'Password',
                     style: TextStyle(
                       fontSize: 25.0,
                       color: Colors.white,

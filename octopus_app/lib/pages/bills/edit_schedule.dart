@@ -143,8 +143,6 @@ class _EditScheduleState extends State<EditSchedule> {
                 ),
               ),
 
-              
-
             ],
           ),
         ),
