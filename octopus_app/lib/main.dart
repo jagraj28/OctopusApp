@@ -5,6 +5,7 @@ import 'package:octopus_app/pages/readings.dart';
 import 'package:octopus_app/pages/bills.dart';
 import 'package:octopus_app/pages/account.dart';
 import 'package:octopus_app/pages/navigation.dart';
+import 'package:octopus_app/pages/home/statements.dart';
 import 'package:octopus_app/pages/readings/past_readings.dart';
 import 'package:octopus_app/pages/readings/confirm_readings.dart';
 import 'package:octopus_app/pages/bills/payment.dart';
@@ -14,8 +15,8 @@ import 'package:octopus_app/pages/bills/edit_schedule.dart';
 import 'package:octopus_app/pages/bills/edit_type.dart';
 import 'package:octopus_app/pages/account/edit_name.dart';
 import 'package:octopus_app/pages/account/edit_contact.dart';
-import 'package:octopus_app/pages/account/help_support.dart';
 import 'package:octopus_app/pages/account/faq.dart';
+import 'package:octopus_app/pages/account/help_support.dart';
 
 void main() => runApp(MaterialApp(
   initialRoute: '/login',
@@ -24,6 +25,7 @@ void main() => runApp(MaterialApp(
     '/navigation': (context) => Navigation(),
 
     '/home': (context) => Home(),
+    '/statements': (context) => Statements(),
 
     '/readings': (context) => Readings(),
     '/past_readings': (context) => PastReadings(),

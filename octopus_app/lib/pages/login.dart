@@ -126,7 +126,7 @@ class _LoginState extends State<Login> {
             Container(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 20.0),
+                  padding: EdgeInsets.only(top: 25.0),
                   child: Text(
                     'Forgot Password?',
                     style: TextStyle(

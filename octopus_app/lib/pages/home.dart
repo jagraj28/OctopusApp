@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
+                margin: const EdgeInsets.only(top: 35.0),
                 child: Text(
                     'Tariff:',
                     style: TextStyle(
@@ -71,7 +71,7 @@ class _HomeState extends State<Home> {
               ),
 
               Container(
-                  margin: const EdgeInsets.only(top: 15.0),
+                  margin: const EdgeInsets.only(top: 10.0),
                   padding: const EdgeInsets.all(20.0),
                   decoration: BoxDecoration(
                     border: Border.all(
@@ -160,7 +160,7 @@ class _HomeState extends State<Home> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 40.0),
+                margin: const EdgeInsets.only(top: 35.0),
                 child: Text(
                     'Referral Link:',
                     style: TextStyle(
@@ -199,6 +199,42 @@ class _HomeState extends State<Home> {
                     fontSize: 15.0,
                     fontFamily: 'Gotham',
                     color: Colors.white,
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: const EdgeInsets.only(top: 35.0),
+                child: Text(
+                    'Statements:',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      fontFamily: 'Gotham',
+                      color: Colors.white,
+                    ),
+                  ),
+              ),
+
+              Container(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 10.0, bottom: 20.0),
+                  child: ButtonTheme(
+                    height: 40.0,
+                    child: RaisedButton.icon(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/statements');
+                      },
+                      icon: Icon(Icons.remove_red_eye),
+                      color: Colors.amberAccent[400],
+                      label: Text(
+                        'View Past Statements',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
+                          fontFamily: 'Gotham',
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ),

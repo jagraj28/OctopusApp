@@ -41,7 +41,7 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 40.0),
+                  padding: EdgeInsets.only(top: 30.0),
                   child: Text(
                     'Electric',
                     style: TextStyle(
@@ -200,7 +200,7 @@ class _ReadingsState extends State<Readings> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 165.0),
+                  padding: EdgeInsets.only(top: 169.0),
                   child: ButtonTheme(
                     height: 40.0,
                     child: RaisedButton.icon(

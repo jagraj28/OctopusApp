@@ -231,7 +231,7 @@ class _AccountState extends State<Account> {
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(bottom: 20.0),
+                  padding: EdgeInsets.only(top: 3.0),
                   child: ButtonTheme(
                     height: 40.0,
                     child: RaisedButton.icon(
