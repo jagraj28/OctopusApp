@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
               Center(
                 child: Container(
                   margin: const EdgeInsets.only(top: 20.0),
-                  padding: const EdgeInsets.all(20.0),
+                  padding: const EdgeInsets.all(15.0),
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 2.0,
@@ -59,15 +59,15 @@ class _HomeState extends State<Home> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 35.0),
+                margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
-                    'Tariff:',
-                    style: TextStyle(
-                      fontSize: 25.0,
-                      fontFamily: 'Gotham',
-                      color: Colors.white,
-                    ),
+                  'Tariff:',
+                  style: TextStyle(
+                    fontSize: 25.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.white,
                   ),
+                ),
               ),
 
               Container(
@@ -160,27 +160,27 @@ class _HomeState extends State<Home> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 35.0),
+                margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
-                    'Referral Link:',
-                    style: TextStyle(
-                      fontSize: 25.0,
-                      fontFamily: 'Gotham',
-                      color: Colors.white,
-                    ),
+                  'Referral Link:',
+                  style: TextStyle(
+                    fontSize: 25.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.white,
                   ),
+                ),
               ),
 
               Container(
                 margin: const EdgeInsets.only(top: 10.0),
                 child: Text(
-                    'Share £100 with a friend!',
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontFamily: 'Gotham',
-                      color: Colors.white,
-                    ),
+                  'Share £100 with a friend!',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.white,
                   ),
+                ),
               ),
 
               Container(
@@ -204,20 +204,20 @@ class _HomeState extends State<Home> {
               ),
 
               Container(
-                margin: const EdgeInsets.only(top: 35.0),
+                margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
-                    'Statements:',
-                    style: TextStyle(
-                      fontSize: 25.0,
-                      fontFamily: 'Gotham',
-                      color: Colors.white,
-                    ),
+                  'Statements:',
+                  style: TextStyle(
+                    fontSize: 25.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.white,
                   ),
+                ),
               ),
 
               Container(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 10.0, bottom: 20.0),
+                  padding: EdgeInsets.only(top: 5.0, bottom: 20.0),
                   child: ButtonTheme(
                     height: 40.0,
                     child: RaisedButton.icon(
@@ -228,6 +228,30 @@ class _HomeState extends State<Home> {
                       color: Colors.amberAccent[400],
                       label: Text(
                         'View Past Statements',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
+                          fontFamily: 'Gotham',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 10.0, bottom: 20.0),
+                  child: ButtonTheme(
+                    height: 40.0,
+                    child: RaisedButton.icon(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/login');
+                      },
+                      icon: Icon(Icons.power_settings_new),
+                      color: Colors.lightBlueAccent[400],
+                      label: Text(
+                        'Logout',
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 20.0,

@@ -40,6 +40,7 @@ class _NavigationState extends State<Navigation> {
           Icon(Icons.payment, size: 30),
           Icon(Icons.account_circle, size: 30),
         ],
+        
         animationDuration: Duration(
           milliseconds: 200,
         ),
@@ -53,6 +54,7 @@ class _NavigationState extends State<Navigation> {
       ),
 
       body: _pageOption[_page],
+
     );
   }
 }

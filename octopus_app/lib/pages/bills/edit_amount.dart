@@ -72,13 +72,13 @@ class _EditAmountState extends State<EditAmount> {
               Container(
                 margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
-                    'New amount:',
-                    style: TextStyle(
-                      fontSize: 25.0,
-                      fontFamily: 'Gotham',
-                      color: Colors.white,
-                    ),
+                  'New amount:',
+                  style: TextStyle(
+                    fontSize: 25.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.white,
                   ),
+                ),
               ),
 
               Container(
@@ -111,13 +111,13 @@ class _EditAmountState extends State<EditAmount> {
               Container(
                 margin: const EdgeInsets.only(top: 40.0),
                 child: Text(
-                    'Are you sure about this?',
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontFamily: 'Gotham',
-                      color: Colors.redAccent[400],
-                    ),
+                  'Are you sure about this?',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Gotham',
+                    color: Colors.redAccent[400],
                   ),
+                ),
               ),
 
               Container(
