@@ -163,7 +163,7 @@ class _HelpSupportState extends State<HelpSupport> {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 2.0,
-                    color: Colors.pinkAccent[400],
+                    color: Colors.lightBlueAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(50.0),
                 ),
@@ -195,7 +195,7 @@ class _HelpSupportState extends State<HelpSupport> {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 2.0,
-                    color: Colors.pinkAccent[400],
+                    color: Colors.lightBlueAccent[400],
                   ),
                   borderRadius: BorderRadius.circular(50.0),
                 ),
