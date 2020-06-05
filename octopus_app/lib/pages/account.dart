@@ -112,7 +112,7 @@ class _AccountState extends State<Account> {
               Container(
                 margin: const EdgeInsets.only(top: 30.0),
                 child: Text(
-                    'Address:',
+                    'Properties:',
                     style: TextStyle(
                       fontSize: 25.0,
                       fontFamily: 'Gotham',
