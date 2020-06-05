@@ -7,6 +7,11 @@ class Login extends StatefulWidget {
 
 // widget for login page
 class _LoginState extends State<Login> {
+
+  void _submit() {
+      Navigator.pushReplacementNamed(context, '/navigation');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,6 +48,7 @@ class _LoginState extends State<Login> {
               ),
             ),
           
+            // login
             Container(
               child: Center(
                 child: Padding(
@@ -60,65 +66,70 @@ class _LoginState extends State<Login> {
                 ),
               ),
 
-            // space to enter email
-            Container(
-              margin: const EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
-              padding: const EdgeInsets.only(left: 15.0),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  width: 2.0,
-                  color: Colors.white,
-                ),
-                borderRadius: BorderRadius.circular(40.0),
-              ),
-              child: Center(
-                child: TextField(
-                  keyboardType: TextInputType.emailAddress,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
-                    fontFamily: 'Gotham',
+            // space to enter email and password
+            Form(
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
+                    padding: const EdgeInsets.only(left: 15.0),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        width: 2.0,
+                        color: Colors.white,
+                      ),
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
+                    child: Center(
+                      child: TextFormField(
+                        keyboardType: TextInputType.emailAddress,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0,
+                          fontFamily: 'Gotham',
+                        ),
+                        decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.email, color: Colors.white),
+                          hintText: 'Email',
+                          hintStyle: TextStyle(color: Colors.grey),
+                          border: InputBorder.none,
+                          contentPadding: EdgeInsets.only(top: 16.0),
+                        ),
+                      ),
+                    ),
                   ),
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.email, color: Colors.white),
-                    hintText: 'Email',
-                    hintStyle: TextStyle(color: Colors.grey),
-                    border: InputBorder.none,
-                    contentPadding: EdgeInsets.only(top: 16.0),
-                  ),
-                ),
-              ),
-            ),
 
-            /// space to enter password
-            Container(
-              margin: const EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
-              padding: const EdgeInsets.only(left: 15.0),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  width: 2.0,
-                  color: Colors.white,
-                ),
-                borderRadius: BorderRadius.circular(40.0),
-              ),
-              child: Center(
-                child: TextField(
-                  obscureText: true,
-                  autocorrect: false,
-                  keyboardType: TextInputType.visiblePassword,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
-                    fontFamily: 'Gotham',
+                  Container(
+                    margin: const EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
+                    padding: const EdgeInsets.only(left: 15.0),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        width: 2.0,
+                        color: Colors.white,
+                      ),
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
+                    child: Center(
+                      child: TextFormField(
+                        obscureText: true,
+                        autocorrect: false,
+                        keyboardType: TextInputType.visiblePassword,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0,
+                          fontFamily: 'Gotham',
+                        ),
+                        decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.lock, color: Colors.white),
+                          hintText: 'Password',
+                          hintStyle: TextStyle(color: Colors.grey),
+                          border: InputBorder.none,
+                          contentPadding: EdgeInsets.only(top: 16.0),
+                        ),
+                      ),
+                    ),
                   ),
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.lock, color: Colors.white),
-                    hintText: 'Password',
-                    hintStyle: TextStyle(color: Colors.grey),
-                    border: InputBorder.none,
-                    contentPadding: EdgeInsets.only(top: 16.0),
-                  ),
-                ),
+                ],
               ),
             ),
 
@@ -147,9 +158,7 @@ class _LoginState extends State<Login> {
                   minWidth: 150.0,
                   height: 40.0,
                   child: RaisedButton.icon(
-                    onPressed: () {
-                      Navigator.pushReplacementNamed(context, '/navigation');
-                    },
+                    onPressed: _submit,
                     icon: Icon(Icons.input),
                     color: Colors.greenAccent[400],
                     label: Text(
