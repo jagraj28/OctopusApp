@@ -20,8 +20,9 @@ class _LoginState extends State<Login> {
       // code for entire body
       body: GestureDetector(
         onTap: () {
-          FocusScope.of(context).requestFocus(new FocusNode());
+          FocusScope.of(context).requestFocus(FocusNode());
         },
+
         child: Container(
           child: SingleChildScrollView(
             child: Column(
@@ -90,11 +91,11 @@ class _LoginState extends State<Login> {
                             fontFamily: 'Gotham',
                           ),
                           decoration: InputDecoration(
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.greenAccent, width: 2.0),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.white, width: 2.0),
+                            enabledBorder: UnderlineInputBorder(      
+                              borderSide: BorderSide(color: Colors.white),   
+                            ),  
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
                             ),
                             prefixIcon: Icon(Icons.email, color: Colors.white),
                             hintText: 'Email',
@@ -129,11 +130,11 @@ class _LoginState extends State<Login> {
                             fontFamily: 'Gotham',
                           ),
                           decoration: InputDecoration(
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.greenAccent, width: 2.0),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.white, width: 2.0),
+                            enabledBorder: UnderlineInputBorder(      
+                              borderSide: BorderSide(color: Colors.white),   
+                            ),  
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
                             ),
                             prefixIcon: Icon(Icons.lock, color: Colors.white),
                             hintText: 'Password',
