@@ -23,6 +23,7 @@ environment:
 dependencies:
   curved_navigation_bar:
   carousel_slider:
+  datetime_picker_formfield: 
   intl:
   flutter:
     sdk: flutter
