@@ -121,7 +121,7 @@ class _ConfirmReadingsState extends State<ConfirmReadings> {
                             height: 40.0,
                             child: RaisedButton.icon(
                               onPressed: () {
-                                Navigator.pushReplacementNamed(context, '/readings');
+                                Navigator.pushNamed(context, '/navigation');
                               },
                               icon: Icon(Icons.cancel),
                               color: Colors.redAccent[400],
@@ -145,7 +145,7 @@ class _ConfirmReadingsState extends State<ConfirmReadings> {
                             height: 40.0,
                             child: RaisedButton.icon(
                               onPressed: () {
-                                Navigator.pushReplacementNamed(context, '/readings');
+                                Navigator.pushNamed(context, '/navigation');
                               },
                               icon: Icon(Icons.check_circle),
                               color: Colors.greenAccent[400],
