@@ -62,7 +62,6 @@ class _ReadingsState extends State<Readings> {
                     width: 2.0,
                     color: Colors.white,
                   ),
-                  borderRadius: BorderRadius.circular(40.0),
                 ),
                 child: Center(
                   child: TextField(
@@ -104,7 +103,6 @@ class _ReadingsState extends State<Readings> {
                     width: 2.0,
                     color: Colors.white,
                   ),
-                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Center(
                   child: TextField(

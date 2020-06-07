@@ -77,7 +77,6 @@ class _AccountState extends State<Account> {
                     width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   'Jagraj Singh',
@@ -129,7 +128,6 @@ class _AccountState extends State<Account> {
                     width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(20.0),
                 ),
                 child: Text(
                   '123 Fake Street\nFakeville\nFA1 KE2',
@@ -173,7 +171,6 @@ class _AccountState extends State<Account> {
                     width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   '07777777777',

@@ -57,7 +57,6 @@ class _BillsState extends State<Bills> {
                     width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   '£68.36',
@@ -109,7 +108,6 @@ class _BillsState extends State<Bills> {
                     width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   '5th of every month',
@@ -161,7 +159,6 @@ class _BillsState extends State<Bills> {
                     width: 2.0,
                     color: Colors.pinkAccent[400],
                   ),
-                  borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
                   'Direct Debit',

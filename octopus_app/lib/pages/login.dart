@@ -33,8 +33,9 @@ class _LoginState extends State<Login> {
                 child: Padding(
                   padding: EdgeInsets.only(top: 80.0),
                   child: Text(
-                    'Welcome Back!',
+                    'Octopus Energy',
                     style: TextStyle(
+                      decoration: TextDecoration.underline,
                       fontSize: 30.0,
                       color: Colors.white,
                       fontFamily: 'Gotham',
@@ -75,8 +76,8 @@ class _LoginState extends State<Login> {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      margin: const EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
-                      padding: const EdgeInsets.only(left: 15.0),
+                      margin: const EdgeInsets.only(top: 10.0, left: 50.0, right: 50.0),
+                      padding: const EdgeInsets.only(left: 10.0),
                       child: Center(
                         child: TextFormField(
                           validator: (String value) {
@@ -113,7 +114,7 @@ class _LoginState extends State<Login> {
 
                     Container(
                       margin: const EdgeInsets.only(top: 20.0, left: 50.0, right: 50.0),
-                      padding: const EdgeInsets.only(left: 15.0),
+                      padding: const EdgeInsets.only(left: 10.0),
                       child: Center(
                         child: TextFormField(
                           validator: (String value) {
@@ -157,11 +158,11 @@ class _LoginState extends State<Login> {
               Container(
                 child: Center(
                   child: Padding(
-                    padding: EdgeInsets.only(top: 25.0),
+                    padding: EdgeInsets.only(top: 30.0),
                     child: Text(
                       'Forgot Password?',
                       style: TextStyle(
-                        fontSize: 20.0,
+                        fontSize: 18.0,
                         color: Colors.redAccent[400],
                         fontFamily: 'Gotham',
                         ),
@@ -189,7 +190,7 @@ class _LoginState extends State<Login> {
                         'Login',
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 22.0,
+                          fontSize: 21.0,
                           fontFamily: 'Gotham',
                         ),
                       ),
