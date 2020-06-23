@@ -4,6 +4,8 @@ Simple energy app for Octopus Energy
 Frontend - Flutter
 Backend - Python
 
+Test data is being used - no real customer data
+
 Requirements:
 - Android Studio
 
