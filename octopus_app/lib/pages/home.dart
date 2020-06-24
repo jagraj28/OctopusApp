@@ -62,6 +62,7 @@ class _HomeState extends State<Home> {
                   )
                 ),
 
+                // tariff information
                 Container(
                   margin: const EdgeInsets.only(top: 30.0),
                   child: Text(
@@ -159,6 +160,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
 
+                // code for referral link
                 Container(
                   margin: const EdgeInsets.only(top: 30.0),
                   child: Text(
@@ -182,7 +184,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-
+                
                 Container(
                   margin: const EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
                   padding: const EdgeInsets.all(15.0),
@@ -202,6 +204,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
 
+                // statements header
                 Container(
                   margin: const EdgeInsets.only(top: 30.0),
                   child: Text(
@@ -214,6 +217,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
 
+                // button for past statements
                 Container(
                   child: Padding(
                     padding: EdgeInsets.only(top: 5.0, bottom: 20.0),
@@ -237,7 +241,8 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-
+                
+                // logout button
                 Container(
                   child: Padding(
                     padding: EdgeInsets.only(top: 5.0, bottom: 30.0),
