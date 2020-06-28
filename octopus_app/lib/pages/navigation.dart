@@ -15,6 +15,7 @@ class _NavigationState extends State<Navigation> {
 
   int _page = 0;
 
+  // importing variables for each page
   final _pageOption = [
     Home(),
     Readings(),
@@ -35,6 +36,8 @@ class _NavigationState extends State<Navigation> {
         buttonBackgroundColor: Colors.white,
         height: 60.0,
         items: <Widget>[
+          
+          // icons for navigation bar
           Icon(Icons.home, size: 30),
           Icon(Icons.remove_red_eye, size: 30),
           Icon(Icons.payment, size: 30),

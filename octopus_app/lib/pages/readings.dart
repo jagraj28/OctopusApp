@@ -63,6 +63,7 @@ class _ReadingsState extends State<Readings> {
                   ), 
                 ),
 
+                // form to enter readings for elec
                 Form(
                   key: elecKey,
                   child: Column(
@@ -122,6 +123,7 @@ class _ReadingsState extends State<Readings> {
                   ), 
                 ),
 
+                // form to enter readings for gas
                 Form(
                   key: gasKey,
                   child: Column(
@@ -166,6 +168,7 @@ class _ReadingsState extends State<Readings> {
                   ),
                 ),
 
+                // selecting the date for the readings
                 Form(
                   child: Container(
                     padding: EdgeInsets.only(top: 20.0),
@@ -198,7 +201,8 @@ class _ReadingsState extends State<Readings> {
                     ),
                   ),
                 ),
-
+                
+                // button with validation to submit readings
                 Container(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -228,6 +232,7 @@ class _ReadingsState extends State<Readings> {
                   ),
                 ),
 
+                // warning for user
                 Container(
                   margin: const EdgeInsets.only(top: 30.0),
                   padding: const EdgeInsets.all(20.0),
@@ -247,7 +252,8 @@ class _ReadingsState extends State<Readings> {
                     ),
                   ),
                 ),
-
+                
+                // button for carousel to show past readings
                 Container(
                   child: Padding(
                     padding: EdgeInsets.only(top: 140.0, bottom: 20.0),

@@ -24,6 +24,8 @@ class _HomeState extends State<Home> {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
+
+                // account balance
                 Center(
                   child: Container(
                     child: Padding(
