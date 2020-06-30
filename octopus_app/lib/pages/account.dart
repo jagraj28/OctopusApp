@@ -207,6 +207,7 @@ class _AccountState extends State<Account> {
                   ),
                 ),
 
+                // button for faqs
                 Container(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -231,6 +232,7 @@ class _AccountState extends State<Account> {
                   ),
                 ),
 
+                // button for help and support
                 Container(
                   child: Padding(
                     padding: EdgeInsets.only(top: 3.0),
