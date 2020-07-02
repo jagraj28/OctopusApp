@@ -125,6 +125,7 @@ class _EditNameState extends State<EditName> {
                   ),
                 ),
 
+                // buttons
                 Container(
                   child: Center(
                     child: Row(
