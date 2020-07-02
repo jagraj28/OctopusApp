@@ -126,6 +126,7 @@ class _EditContactState extends State<EditContact> {
                   ),
                 ),
 
+                // buttons
                 Container(
                   child: Center(
                     child: Row(
