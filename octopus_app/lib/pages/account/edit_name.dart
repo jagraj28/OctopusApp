@@ -182,7 +182,6 @@ class _EditNameState extends State<EditName> {
                     ),
                   ),
                 ),
-
               ],
             ),
           ),
