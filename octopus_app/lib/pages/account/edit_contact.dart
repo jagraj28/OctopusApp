@@ -183,7 +183,6 @@ class _EditContactState extends State<EditContact> {
                     ),
                   ),
                 ),
-
               ],
             ),
           ),
