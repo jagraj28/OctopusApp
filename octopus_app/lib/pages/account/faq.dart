@@ -228,7 +228,6 @@ class _FAQState extends State<FAQ> {
                   ),
                 ),
               ),
-
             ],
           ),
         ),
