@@ -88,6 +88,7 @@ class _EditScheduleState extends State<EditSchedule> {
                     ),
                 ),
 
+                // dropdown for date
                 Container(
                   margin: const EdgeInsets.only(top: 10.0),
                   padding: const EdgeInsets.only(left: 30.0, right: 30.0, top: 10.0, bottom: 15.0),
@@ -137,6 +138,7 @@ class _EditScheduleState extends State<EditSchedule> {
                   ),
                 ),
 
+                // buttons
                 Container(
                   child: Center(
                     child: Row(
