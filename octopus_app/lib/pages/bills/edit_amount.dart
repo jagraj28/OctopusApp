@@ -125,6 +125,7 @@ class _EditAmountState extends State<EditAmount> {
                   ),
                 ),
 
+                // buttons
                 Container(
                   child: Center(
                     child: Row(
