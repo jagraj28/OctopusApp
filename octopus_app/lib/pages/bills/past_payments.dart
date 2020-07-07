@@ -46,6 +46,7 @@ class _PastPaymentsState extends State<PastPayments> {
                 ),
               ),
 
+              // carousel
               Container(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 50.0),
@@ -80,6 +81,7 @@ class _PastPaymentsState extends State<PastPayments> {
                   ),
               ),
 
+              // extra info
               Container(
                 margin: const EdgeInsets.only(top: 10.0),
                 padding: const EdgeInsets.all(15.0),
