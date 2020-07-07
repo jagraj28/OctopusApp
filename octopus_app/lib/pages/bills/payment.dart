@@ -94,6 +94,7 @@ class _PaymentState extends State<Payment> {
                   ),
                 ),
 
+                // buttons
                 Container(
                   child: Center(
                     child: Row(
