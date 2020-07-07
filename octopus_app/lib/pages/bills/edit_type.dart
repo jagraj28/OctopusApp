@@ -132,6 +132,7 @@ class _EditTypeState extends State<EditType> {
                   ),
                 ),
 
+                // buttons
                 Container(
                   child: Center(
                     child: Row(
